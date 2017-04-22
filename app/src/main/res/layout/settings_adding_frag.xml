@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_adding_reviewing_back"
+    android:minWidth="25px"
+    android:minHeight="25px">
+        <TextView
+            style="@style/WhiteNormalTextTitle"
+            android:text="@string/settings_adding"
+            android:textSize="@dimen/txt_10_sp" />
+        <TextView
+            style="@style/WhiteNormalText"
+            android:text="@string/settings_adding_detail"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:layout_marginBottom="@dimen/pad_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/txt_10_sp" />
+        <include
+            layout="@layout/dboard_item_attacks" />
+        <TextView
+            style="@style/WhiteNormalText"
+            android:text="@string/settings_adding_simply_tap"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:gravity="center"
+            android:textSize="@dimen/txt_10_sp" />
+</LinearLayout>

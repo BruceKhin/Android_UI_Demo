@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-6dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@android:color/black" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@color/little_bar_progress"
+                android:layout_weight="1" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@android:color/black"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/normal_back">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+
+                    <ImageView
+                        android:id="@+id/imageView"
+                        android:layout_width="@dimen/pad_42dp"
+                        android:layout_height="@dimen/pad_45dp"
+                        android:layout_marginTop="@dimen/pad_8dp"
+                        android:layout_gravity="center_horizontal"
+                        android:src="@drawable/take_act_logo" />
+
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:layout_width="match_parent"
+                        android:text="@string/take_act_detail"
+                        android:gravity="left|center_vertical"
+                        android:layout_marginLeft="@dimen/pad_12dp"
+                        android:layout_marginRight="@dimen/pad_7dp"
+                        android:textStyle="normal"
+                        android:layout_marginTop="@dimen/pad_10dp"
+                        android:layout_marginBottom="@dimen/pad_10dp" />
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingTop="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:text="@string/take_act_describ1"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lstAnswerSelect1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingRight="@dimen/pad_7dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingTop="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:text="@string/take_act_describ2"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lstAnswerSelect2"
+                style="@style/OptionListView" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingTop="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:text="@string/take_act_describ3"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lstAnswerSelect3"
+                style="@style/OptionListView" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingTop="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:text="@string/take_act_describ4"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lstAnswerSelect4"
+                style="@style/OptionListView" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingTop="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:lineSpacingMultiplier="1.3"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:layout_marginBottom="@dimen/pad_10dp"
+                    android:text="@string/take_act_describ5"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <ListView
+                android:id="@+id/lstAnswerSelect5"
+                style="@style/OptionListView" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

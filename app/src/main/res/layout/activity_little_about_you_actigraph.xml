@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-6dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@android:color/black" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@color/little_bar_progress"
+                android:layout_weight="2" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@android:color/black"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/header_action">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@color/normal_back">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:layout_width="match_parent"
+                        android:text="@string/little_acgraph_top_detail1"
+                        android:gravity="left|center_vertical"
+                        android:textStyle="normal"
+                        android:layout_marginTop="@dimen/pad_7dp"
+                        android:layout_marginBottom="@dimen/pad_5dp"/>
+
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:layout_width="match_parent"
+                        android:text="@string/little_acgraph_top_detail2"
+                        android:gravity="left|center_vertical"
+                        android:textStyle="normal"
+                        android:textColor="@color/text_label"
+                        android:layout_marginBottom="@dimen/pad_5dp"/>
+
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/little_acgraph_comptable_dev"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <TextView
+                android:id="@+id/tvHeightValue"
+                style="@style/LabelTextView"
+                android:textColor="@color/text_label_same_back"
+                android:text="@string/little_acgraph_only_can_link"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:layout_marginTop="@dimen/pad_7dp"/>
+            <TextView
+                style="@style/LabelTextView"
+                android:textColor="@color/text_label_light"
+                android:text="@string/little_acgraph_dev_found"
+                android:layout_marginTop="@dimen/pad_7dp"
+                android:layout_marginLeft="@dimen/pad_7dp" />
+
+            <ListView
+                android:id="@+id/lstMedication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/rlSelectedActGraph"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_22dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:background="@drawable/option_selected_back">
+                <TextView
+                    android:id="@+id/tvSelectedMedic"
+                    style="@style/LabelTextView"
+                    android:text="ActiGraph 103A938CMW"
+                    android:textStyle="normal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:textColor="@color/normal_back"/>
+                <ImageView
+                    android:id="@+id/btnCancelSelectedActGraph"
+                    android:layout_width="@dimen/pad_10dp"
+                    android:layout_height="@dimen/pad_10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_checked_pink"
+
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/pad_7dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnAddMedic"
+            style="@style/PinkColorBtn_LightDisable"
+            android:text="@string/little_acgraph_link_actgraph"
+            android:layout_alignParentBottom="true"
+            android:layout_margin="@dimen/pad_7dp"/>
+    </RelativeLayout>
+</RelativeLayout>

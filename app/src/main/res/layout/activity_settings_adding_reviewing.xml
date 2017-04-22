@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/settings_adding_reviewing_back"
+    android:minWidth="25px"
+    android:minHeight="25px">
+        <ImageView
+            android:id="@+id/ivClose"
+            android:layout_width="@dimen/pad_9dp"
+            android:layout_height="@dimen/pad_9dp"
+            android:layout_marginLeft="@dimen/pad_12dp"
+            android:layout_marginTop="@dimen/pad_12dp"
+            android:src="@drawable/ic_cancel"/>
+        <android.support.v4.view.ViewPager
+            android:id="@+id/pvDashboard"
+            android:layout_below="@+id/ivClose"
+            android:layout_width="match_parent"
+            android:layout_marginTop="@dimen/pad_2dp"
+            android:layout_above="@+id/btnGotIt"
+            android:layout_height="match_parent" />
+        <DK.Ostebaronen.Droid.ViewPagerIndicator.CirclePageIndicator
+            android:id="@+id/indicator"
+            android:layout_above="@+id/btnGotIt"
+            android:paddingBottom="@dimen/pad_5dp"
+            android:layout_height="wrap_content"
+            android:layout_width="fill_parent"
+            android:background="@android:color/transparent"
+            app:radius="3dp"
+            app:fillColor="@android:color/white"
+            app:pageColor="#ADADBF"
+            app:strokeColor="@android:color/transparent"
+            app:strokeWidth="0dp"/>
+        <Button
+            android:id="@+id/btnGotIt"
+            style="@style/ButtonWhiteBackPinkText"
+            android:layout_width="match_parent"
+            android:text="@string/settings_adding_got_it"
+            android:layout_marginBottom="@dimen/pad_15dp"
+            android:textColor="@color/dboard_detail_data_back"
+            android:layout_alignParentBottom="true"
+            />
+</RelativeLayout>

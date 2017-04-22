@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <TextView
+        android:id="@+id/tvItemText"
+        style="@style/LabelTextView"
+        android:text="ActiGraph 103A938CMW"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_22dp"
+        android:textStyle="normal"
+        android:gravity="center"
+        android:layout_centerInParent="true"
+        android:layout_margin="@dimen/pad_3dp"
+        android:textSize="@dimen/txt_8_sp"
+        android:background="@drawable/dboard_option_medic_list_item_selected"
+        android:textColor="@android:color/white"/>
+</RelativeLayout>

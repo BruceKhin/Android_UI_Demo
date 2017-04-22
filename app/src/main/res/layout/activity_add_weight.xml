@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/normal_back"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <LinearLayout
+        style="@style/MatchParentRL"
+        android:orientation="vertical"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/header_action">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_18dp"
+            android:background="@color/add_hw_title_back">
+            <TextView
+                android:id="@+id/tvDragDetail"
+                style="@style/LabelTextView"
+                android:text="@string/add_hw_drag_weight"
+                android:textColor="@color/normal_back"
+                android:layout_centerInParent="true"
+                android:visibility="gone" />
+            <LinearLayout
+                android:id="@+id/llWeightResult"
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:paddingLeft="@dimen/pad_10dp"
+                android:paddingRight="@dimen/pad_10dp"
+                android:paddingTop="@dimen/pad_2dp"
+                android:paddingBottom="@dimen/pad_2dp">
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_back"
+                        android:layout_alignParentRight="true" />
+                    <TextView
+                        android:id="@+id/tvKilograme"
+                        style="@style/LabelTextView"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/normal_back"
+                        android:textSize="@dimen/txt_8_sp"
+                        android:text="178 cm" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="match_parent"
+                        android:background="@color/normal_back"
+                        android:layout_alignParentRight="true" />
+                    <TextView
+                        android:id="@+id/tvPound"
+                        style="@style/LabelTextView"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/normal_back"
+                        android:textSize="@dimen/txt_8_sp"
+                        android:text="5ft 10in" />
+                </RelativeLayout>
+                <RelativeLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1">
+                    <TextView
+                        android:id="@+id/tvStone"
+                        style="@style/LabelTextView"
+                        android:layout_centerInParent="true"
+                        android:textColor="@color/normal_back"
+                        android:textSize="@dimen/txt_8_sp"
+                        android:text="70&quot;" />
+                </RelativeLayout>
+            </LinearLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center">
+            <RelativeLayout
+                android:id="@+id/rlRuler"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@color/add_hw_ruler_back"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:layout_marginBottom="@dimen/pad_30dp">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginBottom="@dimen/pad_21dp">
+                    <ImageView
+                        style="@style/WrapSizeImgView"
+                        android:src="@drawable/add_hw_drag_slider_mark"
+                        android:layout_centerInParent="true" />
+                </RelativeLayout>
+            </RelativeLayout>
+            <View
+                android:id="@+id/vProgress"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:layout_marginBottom="@dimen/pad_30dp"
+                android:background="@drawable/add_hw_progress_back" />
+            <AsthmaTrack.DotLineView
+                android:id="@+id/progressDotLineView"
+                android:layout_width="@dimen/pad_2dp"
+                android:layout_height="@dimen/pad_2dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:layout_marginBottom="@dimen/pad_30dp"
+                />
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="@dimen/pad_30dp"
+                android:background="@android:color/white" />
+            <ImageView
+                android:id="@+id/ivSliderStartImg"
+                android:layout_width="@dimen/pad_42dp"
+                android:layout_height="@dimen/pad_42dp"
+                android:layout_centerHorizontal="true"
+                android:layout_alignParentBottom="true"
+                android:src="@drawable/add_hw_start_point" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:layout_marginBottom="@dimen/pad_30dp"
+                android:src="@drawable/add_hw_ruller_left" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_alignParentRight="true"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:layout_marginBottom="@dimen/pad_30dp"
+                android:src="@drawable/add_hw_ruller_right" />
+            <RelativeLayout
+                android:id="@+id/rlSliderPos"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_30dp"
+                android:layout_marginBottom="@dimen/pad_30dp">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="@android:color/white"
+                    android:layout_marginLeft="@dimen/pad_15dp"
+                    android:layout_marginRight="@dimen/pad_15dp"
+                    android:layout_centerVertical="true" />
+                <ImageView
+                    android:id="@+id/ivSliderPosImg"
+                    android:layout_width="@dimen/pad_42dp"
+                    android:layout_height="@dimen/pad_42dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/add_hw_progress_slider" />
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

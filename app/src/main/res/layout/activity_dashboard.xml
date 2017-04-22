@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@color/normal_back"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@+id/header_action">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <android.support.v4.view.ViewPager
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_66dp">
+
+            </android.support.v4.view.ViewPager>
+            <include layout="@layout/dboard_item_asq"/>
+            <include layout="@layout/dboard_item_act"/>
+            <include layout="@layout/dboard_item_attacks"/>
+            <include layout="@layout/dboard_item_activity"/>
+            <include layout="@layout/dboard_item_spirometry"/>
+            <include layout="@layout/dboard_item_peak_flow"/>
+            <include layout="@layout/dboard_item_mood"/>
+            <include layout="@layout/dboard_item_sleep"/>
+            <include layout="@layout/dboard_item_weight"/>
+            <include layout="@layout/dboard_item_medications"/>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,7 @@
+<shape xmlns:android="http://schemas.android.com/apk/res/android"
+    android:shape="rectangle" android:padding="10dp">
+    <solid  android:color="@color/dboard_item_plus_button_back"/>
+    <corners
+        android:bottomRightRadius="@dimen/pad_2dp"
+        android:bottomLeftRadius="@dimen/pad_2dp"/>
+</shape>

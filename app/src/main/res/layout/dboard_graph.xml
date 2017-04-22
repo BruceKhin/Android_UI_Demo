@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="@dimen/pad_4dp"
+    android:paddingLeft="@dimen/pad_7dp"
+    android:paddingRight="@dimen/pad_7dp"
+    android:paddingBottom="@dimen/pad_5dp">
+    <RelativeLayout
+        android:id="@+id/rlYAxis"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="@dimen/pad_30dp">
+        <TextView
+            android:id="@+id/tvYAxisTop"
+            style="@style/AxisTextView"
+            android:text="25" />
+        <TextView
+            android:id="@+id/tvYAxisBottom"
+            style="@style/AxisTextView"
+            android:layout_alignParentBottom="true"
+            android:text="5" />
+    </RelativeLayout>
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/rlYAxis"
+        android:layout_marginLeft="@dimen/pad_5dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_2dp"
+            android:layout_marginTop="@dimen/pad_4dp"
+            android:background="@drawable/dboard_graph_horizontal_dash_line"
+            android:layout_marginBottom="@dimen/pad_8dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_2dp"
+            android:background="@drawable/dboard_graph_horizontal_dash_line"
+            android:layout_marginBottom="@dimen/pad_8dp" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_2dp"
+            android:background="@drawable/dboard_graph_horizontal_dash_line"
+            android:layout_marginBottom="@dimen/pad_4dp" />
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/llGraphBarChat"
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_30dp"
+        android:layout_toRightOf="@+id/rlYAxis"
+        android:layout_marginLeft="@dimen/pad_5dp"
+        android:paddingTop="@dimen/pad_2dp"
+        android:paddingBottom="@dimen/pad_2dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat1"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat2"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat3"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat4"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat5"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat6"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent">
+            <View
+                android:id="@+id/vChat7"
+                android:layout_width="@dimen/pad_4dp"
+                android:layout_height="match_parent"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/dboard_act_due_in_days_back"
+                android:layout_alignParentBottom="true" />
+        </RelativeLayout>
+    </LinearLayout>
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/llGraphBarChat"
+        android:layout_marginTop="@dimen/pad_4dp"
+        android:layout_toRightOf="@+id/rlYAxis"
+        android:layout_marginLeft="@dimen/pad_5dp">
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis1"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis2"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis3"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis4"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis5"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis6"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/tvXAxis7"
+                style="@style/AxisTextView"
+                android:layout_centerInParent="true"
+                android:text="M" />
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

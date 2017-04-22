@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-5dp">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_asthma_medic" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:layout_marginBottom="@dimen/pad_15dp"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_asthma_medication"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rlSelectedMedication"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_22dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:background="@drawable/settings_medication_list_back">
+                <TextView
+                    android:id="@+id/tvSelectedMedic"
+                    style="@style/LabelTextView"
+                    android:text="Steroid Tablets, 100mg, Once Daily"
+                    android:textStyle="normal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:textColor="@color/normal_back"/>
+                <Button
+                    android:id="@+id/btnCancelSelectedMedic"
+                    android:layout_width="@dimen/pad_10dp"
+                    android:layout_height="@dimen/pad_10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_item_cancel"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/pad_7dp"/>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_22dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:background="@drawable/settings_medication_list_back">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:text="Preventer, 250mg, Twice Daily"
+                    android:textStyle="normal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:textColor="@color/normal_back"/>
+                <Button
+                    android:layout_width="@dimen/pad_10dp"
+                    android:layout_height="@dimen/pad_10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_item_cancel"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/pad_7dp"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_22dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:background="@drawable/settings_medication_list_back">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:text="Reliever, 500mg, As Needed"
+                    android:textStyle="normal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:textColor="@color/normal_back"/>
+                <Button
+                    android:layout_width="@dimen/pad_10dp"
+                    android:layout_height="@dimen/pad_10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_item_cancel"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/pad_7dp"/>
+            </RelativeLayout>
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_marginLeft="@dimen/pad_7dp"
+            android:layout_marginRight="@dimen/pad_7dp"
+            android:layout_marginBottom="@dimen/pad_10dp"
+            android:background="@drawable/rounded_outline"
+            android:textAllCaps="false"
+            android:textColor="@color/own_pink"
+            android:text="@string/settings_medic_add_another"/>
+    </RelativeLayout>
+
+
+</RelativeLayout>

@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/activate_back"
+        android:id="@+id/imgSplashBack" />
+    <include
+        layout="@layout/action_bar" />
+    <RelativeLayout
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="@dimen/pad_10dp"
+        android:paddingLeft="@dimen/pad_7dp"
+        android:paddingRight="@dimen/pad_7dp"
+        android:visibility="gone"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <TextView
+            android:id="@+id/tvDetailForgotPsd"
+            style="@style/DetailInformationTextView"
+            android:text="@string/forgot_detail" />
+        <TextView
+            android:id="@+id/tvEmail"
+            style="@style/WhiteNormalText"
+            android:textColor="@color/textPurple"
+            android:text="@string/login_email"
+            android:textSize="@dimen/txt_7_sp"
+            android:layout_marginLeft="0dp"
+            android:layout_marginTop="@dimen/pad_20dp"
+            android:layout_below="@+id/tvDetailForgotPsd"
+            android:layout_alignLeft="@+id/rlPassword"
+            android:layout_alignStart="@+id/rlPassword" />
+        <RelativeLayout
+            android:id="@+id/rlEmail"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvEmail"
+            android:focusableInTouchMode="true"
+            android:layout_marginTop="@dimen/pad_4dp">
+            <EditText
+                android:id="@+id/edtEmail"
+                style="@style/NormalEditText"
+                android:inputType="textEmailAddress" />
+            <RelativeLayout
+                android:layout_width="@dimen/pad_30dp"
+                android:layout_height="match_parent"
+                android:background="@drawable/right_rounded_view"
+                android:layout_alignEnd="@+id/edtEmail"
+                android:layout_alignRight="@+id/edtEmail"
+                android:layout_alignBottom="@+id/edtEmail"
+                android:visibility="gone"
+                android:padding="@dimen/pad_2dp">
+                <ImageView
+                    style="@style/WrapSizeImgView"
+                    android:src="@drawable/ic_activate_question"
+                    android:scaleType="centerInside"
+                    android:layout_centerInParent="true" />
+            </RelativeLayout>
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="fill_parent"
+            android:layout_marginTop="@dimen/pad_20dp"
+            android:layout_below="@+id/rlEmail"
+            android:layout_marginBottom="@dimen/pad_4dp">
+            <Button
+                android:id="@+id/btnActivate"
+                style="@style/PinkColorBtn"
+                android:text="@string/forgot_send_psd_reset" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="@dimen/pad_10dp"
+        android:paddingLeft="@dimen/pad_7dp"
+        android:paddingRight="@dimen/pad_7dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            style="@style/MatchParentRL"
+            android:layout_above="@+id/btnCheckEmail">
+            <LinearLayout
+                style="@style/WrapSizeImgView"
+                android:orientation="vertical"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/pad_20dp">
+                <ImageView
+                    android:id="@+id/ivImgConfirm"
+                    style="@style/WrapSizeImgView"
+                    android:layout_width="@dimen/pad_85dp"
+                    android:layout_height="@dimen/pad_70dp"
+                    android:layout_gravity="center"
+                    android:src="@drawable/img_confirm"/>
+                <TextView
+                    style="@style/WhiteNormalTextTitle"
+                    android:layout_marginTop="@dimen/pad_20dp"
+                    android:textSize="@dimen/txt_15_sp"
+                    android:text="@string/forgot_email_sent"/>
+                <TextView
+                    style="@style/DetailInformationTextView"
+                    android:layout_marginTop="@dimen/pad_10dp"
+                    android:text="@string/forgot_email_sent_detail"
+                    />
+            </LinearLayout>
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btnCheckEmail"
+            style="@style/PinkColorBtn"
+            android:layout_alignParentBottom="true"
+            android:layout_marginBottom="@dimen/pad_15dp"
+            android:text="@string/forgot_send_psd_reset" />
+    </RelativeLayout>
+</RelativeLayout>

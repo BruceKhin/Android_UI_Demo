@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/activityRoot"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:minWidth="25px"
+        android:minHeight="25px">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/activate_back"
+            android:id="@+id/imgSplashBack" />
+        <include layout="@layout/action_bar"/>
+
+
+        <RelativeLayout
+            android:id="@+id/rlTermUseTitle"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_40dp"
+            android:layout_below="@+id/header_action"
+            android:paddingLeft="@dimen/pad_7dp"
+            android:paddingRight="@dimen/pad_7dp">
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:text="By using "/>
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:textStyle="bold"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="0dp"
+                        android:layout_marginRight="0dp"
+                        android:text="AsthmaTrack"/>
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:layout_marginRight="0dp"
+                        android:layout_marginLeft="0dp"
+                        android:layout_gravity="right"
+                        android:text=" you agree to these"/>
+                </LinearLayout>
+                <TextView
+                    style="@style/DetailInformationTextView"
+                    android:layout_gravity="left"
+                    android:layout_marginTop="@dimen/pad_2dp"
+                    android:layout_marginRight="0dp"
+                    android:layout_marginLeft="0dp"
+                    android:text=" you agree to these"/>
+            </LinearLayout>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@android:color/white"
+            android:layout_below="@+id/rlTermUseTitle">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@android:color/white"
+                android:layout_above="@+id/llTermUseBtns"
+                android:paddingLeft="@dimen/pad_7dp"
+                android:paddingRight="@dimen/pad_7dp">
+                <TextView
+                    style="@style/WhiteNormalText"
+                    android:layout_height="match_parent"
+                    android:text="@string/terms_detail"
+                    android:layout_gravity="left"
+                    android:maxLines="1000"
+                    android:layout_marginTop="@dimen/pad_14dp"
+                    android:lineSpacingMultiplier="1.4"
+                    android:textSize="@dimen/txt_7_sp"
+                    android:scrollbars="vertical"
+                    android:layout_marginBottom="-5dp"
+                    android:scrollbarAlwaysDrawVerticalTrack="true"
+                    android:textColor="@color/termsText"/>
+            </RelativeLayout>
+            <LinearLayout
+                android:id="@+id/llTermUseBtns"
+                android:orientation="vertical"
+                android:layout_alignParentBottom="true"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <View
+                    android:layout_width="match_parent"
+                    android:layout_height="5dp"
+                    android:background="@drawable/actionbar_shadow_back_vertical_flip"/>
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_40dp"
+                    android:background="@android:color/white">
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/pad_7dp">
+                        <Button
+                            style="@style/PinkColorBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/rounded_decline_button"
+                            android:textColor="@color/declineBtn"
+                            android:text="@string/btn_decline"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_weight="1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="match_parent"
+                        android:padding="@dimen/pad_7dp">
+                        <Button
+                            style="@style/PinkColorBtn"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:text="@string/btn_agree"/>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+
+
+</RelativeLayout>

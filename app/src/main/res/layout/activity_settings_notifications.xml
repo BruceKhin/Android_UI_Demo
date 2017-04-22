@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_alert"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_noti_basic_reminder"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:layout_marginBottom="@dimen/pad_10dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_gravity="center_vertical"
+                    android:textColor="@color/profile_password_text"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:textStyle="normal"
+                    android:layout_weight="1"
+                    android:layout_marginLeft="@dimen/pad_10dp"
+                    android:text="@string/settings_noti_would_like"/>
+                <ToggleButton
+                    android:layout_width="@dimen/pad_25dp"
+                    android:layout_height="@dimen/pad_15dp"
+                    android:layout_gravity="center_vertical"
+                    android:layout_marginRight="@dimen/pad_10dp"
+                    android:text=""
+                    android:textOn=""
+                    android:textOff=""
+                    android:background="@drawable/settings_toggle_btn"/>
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_noti_inact_reminder"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+
+            <Button
+                android:id="@+id/btnRemindNoti48Hr"
+                style="@style/ButtonOption"
+                android:background="@drawable/settings_option_unselected"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:textSize="@dimen/txt_7_sp"
+                android:textStyle="normal"
+                android:text="@string/settings_noti_remind_48" />
+            <Button
+                android:id="@+id/btnRemindNotiWeek"
+                style="@style/ButtonOption"
+                android:background="@drawable/settings_option_unselected"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:textSize="@dimen/txt_7_sp"
+                android:textStyle="normal"
+                android:text="@string/settings_noti_remind_week" />
+            <Button
+                android:id="@+id/btnRemindNotiMonth"
+                style="@style/ButtonOption"
+                android:background="@drawable/settings_option_unselected"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:textSize="@dimen/txt_7_sp"
+                android:textStyle="normal"
+                android:text="@string/settings_noti_remind_month" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

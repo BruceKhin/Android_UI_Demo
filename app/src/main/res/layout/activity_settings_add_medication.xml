@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <ScrollView
+        android:layout_below="@+id/header_action"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_below="@+id/header_action"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+            <TextView
+                style="@style/LabelTextView"
+                android:text="@string/add_medi_type"
+                android:textColor="@color/text_label_light"
+                android:layout_marginTop="@dimen/pad_13dp"
+                android:layout_marginLeft="@dimen/pad_7dp" />
+            <Button
+                android:id="@+id/btnMediTypeSteroid"
+                style="@style/ButtonOption"
+                android:background="@drawable/settings_option_unselected"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:text="@string/add_medi_type_steroid" />
+            <Button
+                android:id="@+id/btnMediTypePreventer"
+                style="@style/ButtonOption"
+                android:background="@drawable/settings_option_unselected"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:text="@string/add_medi_type_preventer" />
+            <Button
+                android:id="@+id/btnMediTypeReliever"
+                style="@style/ButtonOption"
+                android:background="@drawable/settings_option_unselected"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:text="@string/add_medi_type_reliever" />
+            <LinearLayout
+                android:id="@+id/llDetailMedicInfo"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:text="@string/add_medi_dosage"
+                    android:textColor="@color/text_label_light"
+                    android:layout_marginTop="@dimen/pad_7dp"
+                    android:layout_marginLeft="@dimen/pad_7dp" />
+                <Spinner
+                    android:id="@+id/spnDosageNewMedic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_22dp"
+                    android:background="@drawable/settings_spinner_back"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:layout_marginRight="@dimen/pad_7dp"
+                    android:layout_marginTop="@dimen/pad_5dp" />
+                <TextView
+                    style="@style/LabelTextView"
+                    android:text="@string/add_medi_frequency"
+                    android:textColor="@color/text_label_light"
+                    android:layout_marginTop="@dimen/pad_9dp"
+                    android:layout_marginLeft="@dimen/pad_7dp" />
+                <Spinner
+                    android:id="@+id/spnFrequencyTakingMedic"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_22dp"
+                    android:background="@drawable/settings_spinner_back"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:layout_marginRight="@dimen/pad_7dp"
+                    android:layout_marginTop="@dimen/pad_5dp" />
+                <LinearLayout
+                    android:id="@+id/llHowTake"
+                    android:orientation="vertical"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        style="@style/LabelTextView"
+                        android:text="@string/add_medi_how_take"
+                        android:textColor="@color/text_label_light"
+                        android:layout_marginTop="@dimen/pad_9dp"
+                        android:layout_marginLeft="@dimen/pad_7dp" />
+                    <Spinner
+                        android:id="@+id/spnHowTake"
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pad_22dp"
+                        android:background="@drawable/settings_spinner_back"
+                        android:layout_marginLeft="@dimen/pad_7dp"
+                        android:layout_marginRight="@dimen/pad_7dp"
+                        android:layout_marginTop="@dimen/pad_5dp" />
+                    <TextView
+                        style="@style/LabelTextView"
+                        android:text="@string/add_medi_how_often"
+                        android:textColor="@color/text_label_light"
+                        android:layout_marginTop="@dimen/pad_7dp"
+                        android:layout_marginLeft="@dimen/pad_7dp" />
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="@dimen/pad_50dp"
+                        android:layout_margin="@dimen/pad_7dp"
+                        android:background="@drawable/rounded_btn_white_dark_white_border">
+                        <RelativeLayout
+                            android:orientation="horizontal"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_centerHorizontal="true">
+                            <TextView
+                                android:id="@+id/tvTimesNumber"
+                                style="@style/TimesTextView"
+                                android:textColor="@color/dboard_no_data_blue"
+                                android:layout_margin="0dp"
+                                android:padding="0dp"
+                                android:text="00" />
+                            <TextView
+                                android:id="@+id/textView"
+                                style="@style/LabelTextView"
+                                android:textSize="@dimen/txt_10_sp"
+                                android:layout_marginLeft="0dp"
+                                android:layout_marginTop="@dimen/pad_2dp"
+                                android:layout_alignParentTop="true"
+                                android:text="@string/add_medi_time_per_day"
+                                android:layout_toRightOf="@+id/tvTimesNumber"
+                                android:textColor="@color/add_medic_times_day"
+                                android:layout_height="wrap_content" />
+                        </RelativeLayout>
+                    </RelativeLayout>
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

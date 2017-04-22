@@ -1,0 +1,348 @@
+<resources>
+    <string name="app_name">AsthmaTrack_ST</string>
+    <string name="yes">Yes</string>
+    <string name="no">No</string>
+
+    <!--Production date-->
+    <string name="splash_product_date">July 2016 XX/XXX/0000/00</string>
+    <string name="splash_about_text_title">980 Great West Road, Brentford, Middlesex, TW8 9GS, UK</string>
+    <string name="splash_about_text1">2016 GSK group of companies, All rights reserved.</string>
+    <string name="splash_about_text2">GlaxoSmithKine plc, Registered in England and</string>
+    <string name="splash_about_text3">Wales No. 3888372.</string>
+    <string name="splash_provided_by">Environmental data provided by:</string>
+
+    <!--Activate Screen-->
+    <string name="activate_welcome">Welcome</string>
+    <string name="activate_detail">To activate your account, you\’ll need to \n
+                        Enter the Activation code given to you\n
+                        By your care team\n</string>
+    <string name="activate_active_code">Activation Code</string>
+    <string name="activate_active_button">Activate</string>
+    <string name="activate_terms_of_use">Terms of Use</string>
+    <string name="activate_login_here">Login here</string>
+    <string name="activate_already_entered">Already entered an activation code?</string>
+    <string name="activate_failed">Activation failed. Code incomplete</string>
+
+    <!--Terms of Use-->
+    <string name="actionbar_terms_title">Terms of use</string>
+    <string name="terms_title">Lorem ipsum dolor sit amet. </string>
+    <string name="btn_agree">Agree</string>
+    <string name="btn_decline">Decline</string>
+    <string name="terms_sub_title">Pulvinar neque at sapien aliquet, in maximus risus aliquam. Fusce at ultrices neque, eu sodales odio.</string>
+    <string name="terms_detail">Donec purus ligula, hendrerit elementum elementum vitae, vehicula eget dolor. Quisque ex diam, sollicitudin a massa in, accumsan faucibus justo. Duis hendrerit purus eget est ullamcorper imperdiet. Integer fringilla erat nisi, vel pharetra felis viverra vel. \n\n
+                                Suspendisse et magna vitae tortor bibendum vulputate. Proin luctus mattis nisi, non pulvinar arcu auctor sed. Fusce faucibus neque eget felis egestas condimentum. Vivamus sodales mi a nulla malesuada gravida. Cras porttitor urna vel nisi lobortis euismod. Nullam vitae est sed massa tempus viverra convallis ac nibh. Sed in eros quis nisl luctus scelerisque. Sed fringilla tortor sit amet sem consectetur, et ultrices ligula hendrerit. Nullam a odio sit amet magna sodales faucibus ultrices sed nibh. Nullam dapibus nunc a interdum imperdiet. Nullam convallis dolor at urna ullamcorper mollis. Maecenas facilisis fringilla urna ut pellentesque. Proin non tortor arcu. Fusce at arcu tristique, aliquam risus vitae, vehicula est. </string>
+
+    <!--Login-->
+    <string name="actionbar_login">Login to AsthmaTrack</string>
+    <string name="login_btn_login">LOGIN</string>
+    <string name="login_email">Email</string>
+    <string name="login_email_hint">email@emailaddress.com</string>
+    <string name="login_password">Password</string>
+    <string name="login_password_show">Show</string>
+    <string name="login_forgotten_password">Forgotten Password?</string>
+
+    <!--Forgotten Password-->
+    <string name="actionbar_forgot">Forgotten Password</string>
+    <string name="forgot_detail">Enter the email address associated\n with your account</string>
+    <string name="forgot_send_psd_reset">Send Password Reset Email </string>
+    <string name="forgot_email_sent">Email sent!</string>
+    <string name="forgot_check_email">Check email</string>
+    <string name="forgot_email_sent_detail">We’ve sent you an email with a link to\n reset your password</string>
+
+    <!--Set New Password-->
+    <string name="set_new_psd_detail">Enter your new password</string>
+    <string name="set_new_psd">New Password</string>
+    <string name="set_psd_must_have">Password must have:</string>
+    <string name="set_psd_characters">8-20 characters (A-Z, a-z)</string>
+    <string name="set_at_least_one">At least one\n special character</string>
+    <string name="set_at_least_one_number">At least one number(0-9)</string>
+
+    <!--Activate Account-->
+    <string name="activate_acnt_detail">We’ll only use these details so that you\n can login or reset your password</string>
+    <string name="activate_login_failed">Login failed, Invalid email.</string>
+
+    <!--A Little About You-->
+    <string name="little_person_info">Personal Information</string>
+    <string name="little_asthma_info">Asthma Information</string>
+    <string name="little_detail1">We would like to know a little more about you</string>
+    <string name="little_detail2">so we can personalise your experience using</string>
+    <string name="little_height">Height</string>
+    <string name="little_add_height_btn">Tap to add your height</string>
+    <string name="little_weight">Weight</string>
+    <string name="little_add_weight_btn">Tap to add your weight</string>
+    <string name="little_medication">Medication</string>
+    <string name="little_add_medication">Add a medication</string>
+    <string name="little_height_value" formatted="false">%dcm   |   %d\’%d\”   |   %d</string>
+    <string name="little_weight_value" formatted="false">%.1fkg   |   %.1flbs   |   %dst %dlbs</string>
+    <!--Link ActiGraph-->
+    <string name="little_acgraph_top_detail1">To help monitor your activity you can link to the \nActiGraph tracker you may already be using</string>
+    <string name="little_acgraph_top_detail2">Don’t worry if you don’t have a device; all\n data can be entered manually in the app</string>
+    <string name="little_acgraph_comptable_dev">Compatible Devices</string>
+    <string name="little_acgraph_only_can_link">You can only link one ActiGraph at a time</string>
+    <string name="little_acgraph_dev_found">ActiGraph Devices Found</string>
+    <string name="little_acgraph_link_actgraph">Link to this ActiGraph</string>
+
+    <!--Add new medication-->
+    <string name="actionbar_add_medi">Add new medication</string>
+    <string name="add_medi_type">Type of medication</string>
+    <string name="add_medi_dosage">Dosage of new medication</string>
+    <string name="add_medi_frequency">Frequency talking this medication</string>
+    <string name="add_medi_how_take">How do you take it?</string>
+    <string name="add_medi_how_often">How often?</string>
+    <string name="add_medi_time_per_day">times per day</string>
+    <string name="add_medi_type_steroid">Steroid Tablets</string>
+    <string name="add_medi_type_preventer">Preventer</string>
+    <string name="add_medi_type_reliever">Reliever</string>
+
+    <!--Add Weight or Height-->
+    <string name="add_hw_drag_weight">Drag slider, release to set your weight</string>
+    <string name="add_hw_drag_height">Drag slider, release to set your height</string>
+
+    <!--Take the Act-->
+    <string name="actionbar_take_act">Take the Act</string>
+    <string name="take_act_detail">This is the Asthma Control Test™ (ACT) it\'s \n
+        simple and takes less than a minute helping \n
+        you get a clearer picture of how well controlled\n
+        your asthma is</string>
+    <string name="take_act_describ1">1. During the last 4 weeks, how often did your asthma symptoms (wheezing, coughing, chest tightness, shortness of breath) wake you up at night or earlier than usual in the morning?</string>
+    <string name="take_act_describ2">2. During the past 4 weeks, how often have you had shortness of breath?</string>
+    <string name="take_act_describ3">3. During the last 4 weeks, how often did your asthma symptoms (wheezing, coughing, chest tightness, shortness of breath) wake you up at night or earlier than usual in the morning?</string>
+    <string name="take_act_describ4">4. During the past 4 weeks, how often have you used your reliever inhaler? (usually blue)</string>
+    <string name="take_act_describ5">5. How would you rate your asthma control during the past 4 weeks?</string>
+    <string-array name="take_act_ds_answer">
+        <item>4 or more times a week</item>
+        <item>2-3 nights a week</item>
+        <item>Once a week</item>
+        <item>Once or twice</item>
+        <item>Not at all</item>
+    </string-array>
+    <string-array name="rate_asthma_ctrl_answer">
+        <item>Not controlled</item>
+        <item>Poorly controlled</item>
+        <item>Somewhat controlled</item>
+        <item>Well controlled</item>
+        <item>Completely controlled</item>
+    </string-array>
+
+    <!--Your ACT Result-->
+    <string name="actionbar_your_act_res">Your ACT Result</string>
+    <string name="your_act_score_is">Your ACT score is</string>
+    <string name="your_act_target">On target</string>
+    <string name="your_act_uncontrolled">Uncontrolled</string>
+    <string name="your_act_controlled">Controlled</string>
+    <string name="your_act_suggest">This suggests that you\'ve kept your asthma well controlled!</string>
+    <string name="your_act_keep_track">Keep track of your asthma with ACT every month</string>
+    <string name="your_act_what_score_mean">What does my score mean?</string>
+
+    <!--What does score mean-->
+    <string name="actionbar_what_score">What does my score mean?</string>
+    <string name="what_score_19_lesss_title">A score of 19 or less indicates your asthma symptoms may not be as well controlled as they could be.</string>
+    <string name="what_score_19_lesss_detail1">There may be more you or your healthcare provider could do to help control your asthma symptoms.</string>
+    <string name="what_score_19_lesss_detail2">NOTE: If your score is 15 or less, your asthma may be very poorly controlled. Please contact your health professional right away.</string>
+    <string name="what_score_20_over_title">A score of 20-25 indicates your asthma symptoms appear to be well-controlled.</string>
+    <string name="what_score_20_over_detail">Even so, asthma control can change over time so it’s important to retest yourself regularly. Continue to talk to your healthcare provider about your asthma control.</string>
+
+    <!--Take the ASQ-->
+    <string name="actionbar_take_the_asq">Take the ASQ</string>
+    <string name="take_asq_detail">This is the Asthma Steroid Questionnaire (ASQ) and takes less than a minute helping you get a clearer picture of how well controlled your asthma is</string>
+    <string name="take_asq_medication_usage">Medication Usage</string>
+    <string name="take_asq_describ1">Are you taking regular Oral Corticosteriods for controlling your asthma symptoms?</string>
+    <string name="take_asq_dosage_of_medic">Dosage of new medication</string>
+    <string name="take_asq_frequency_taking">Frequency taking this medication</string>
+    <string name="take_asq_since_experience">Since being on this current dose of Oral corticosteroids, to what degree have you experienced the following?</string>
+    <string name="take_asq_feeling_nervous">Feeling nervous, agitated or irritable?</string>
+    <string name="take_asq_progress_min_max">"0 = No or absent      10 = Worst imaginable"</string>
+    <string name="take_asq_have_digestive">Have digestive symptoms such as bloating, reflux or heartburn?</string>
+    <string name="take_asq_feel_sad">Feel sad or depressed?</string>
+    <string name="take_asq_experience_sleep">Experience difficulty sleeping?</string>
+    <string name="take_asq_increased_appetite">Experience increased appetite \nor weight gain?</string>
+    <string name="take_asq_difficulty_remember">Experience difficulty remembering things?</string>
+    <string name="take_asq_pay_attention">Experience difficulty paying close attention to something OR concentrating?</string>
+    <string name="take_asq_swollen_face">Experience a swollen face OR “moon face” or swelling of other parts of your body?</string>
+    <string name="take_asq_have_bruising">Have bruising?</string>
+
+    <!--Dash Board-->
+    <string name="actionbar_dashboard">Dashboard</string>
+    <string name="dboard_no_data_added">No data added</string>
+    <string-array name="month_name">
+        <item>Jan</item>
+        <item>Feb</item>
+        <item>Mar</item>
+        <item>Apr</item>
+        <item>May</item>
+        <item>Jun</item>
+        <item>Jul</item>
+        <item>Aug</item>
+        <item>Sep</item>
+        <item>Oct</item>
+        <item>Nov</item>
+        <item>Dec</item>
+    </string-array>
+    <string name="dboard_data_unavailable">Data unavailable</string>
+    <string name="dboard_check_internet">Check your internet connection</string>
+
+    <!--Dashboard Weather-->
+    <string name="dboard_weather">Weather</string>
+    <string name="dboard_weather_high">High</string>
+    <string name="dboard_weather_low">Low</string>
+    <string name="dboard_weather_celsius_fahrenheit">°C/°F:</string>
+    <string name="dboard_weather_celsius">°C</string>
+    <string name="dboard_weather_fahrenheit">°F</string>
+
+    <!--Dashboard Pollen-->
+    <string name="dboard_pollen">Pollen</string>
+    <string name="dboard_pollen_types">Types</string>
+    <string name="dboard_pollen_trees_grass">Trees, Grass</string>
+
+    <!--Dashboard Air-->
+    <string name="dboard_air">Air Quality</string>
+    <string name="dboard_air_status">Status:</string>
+    <string name="dboard_air_status_res">Satisfactory</string>
+    <string name="dboard_air_status_good">Good</string>
+
+    <string name="dboard_asq">Asthma Steroid Questionnaire(ASQ)</string>
+    <string name="dboard_asq_due">Your next ASQ is due in</string>
+    <string name="dboard_asq_due_1">Your next ASQ is due!</string>
+    <string name="dboard_asq_take">+ Take the ASQ</string>
+    <string name="dboard_asq_take_now">Take it now</string>
+
+    <string name="dboard_act_result">ACT results</string>
+    <string name="dboard_act_take">+ Take the ACT</string>
+    <string name="dboard_act_due">Your next ACT is due in</string>
+
+    <string name="dboard_attacks">Attacks</string>
+    <string name="dboard_attacks_no_data">No data avilable \nfor Attacks yet</string>
+    <string name="dboard_attacks_take">+ Take Attack Data</string>
+
+    <string name="dboard_activity">Activity</string>
+    <string name="dboard_activity_no_data">No data avilable \nfor Activity yet</string>
+    <string name="dboard_activity_take">+ Take Activity Data</string>
+
+    <string name="dboard_spirometry">Spirometry</string>
+    <string name="dboard_spirometry_no_data">No data avilable \nfor Spirometry yet</string>
+    <string name="dboard_spirometry_take">+ Take Spirometry Data</string>
+    <string name="dboard_spirometry_fev1">Last FEV1 reading(l/min)</string>
+    <string name="dboard_spirometry_fvc">Last FVC reading(l/min)</string>
+
+    <string name="dboard_peak_flow">Peak Flow</string>
+    <string name="dboard_peak_flow_no_data">No data avilable \nfor Peak Flow yet</string>
+    <string name="dboard_peak_flow_take">+ Take Peak Flow Data</string>
+
+    <string name="dboard_mood">Mood</string>
+    <string name="dboard_mood_no_data">No data avilable \nfor Mood yet</string>
+    <string name="dboard_mood_take">+ Take Mood Data</string>
+
+    <string name="dboard_sleep">Sleep</string>
+    <string name="dboard_sleep_no_data">No data avilable \nfor Sleep yet</string>
+    <string name="dboard_sleep_take">+ Take Sleep Data</string>
+
+    <string name="dboard_weight">Weight</string>
+    <string name="dboard_weight_no_data">No data avilable \nfor Weight yet</string>
+    <string name="dboard_weight_take">+ Take Weight Data</string>
+
+    <string name="dboard_medications">Medications</string>
+    <string name="dboard_medications_no_data">No medication data available</string>
+    <string name="dboard_medications_current">You are currently on:</string>
+    <string name="dboard_medications_take">+ Add Medication Data</string>
+
+    <!--Dashboard Weather, Pollen, Air Detail-->
+    <string name="dbaord_data_provided_by">Data provided by</string>
+
+    <string name="dboard_weather_detail_describ">Did you know that cold air, damp weather, thunderstorms, really hot weather and a sudden change in temperature can trigger your asthma symptoms?</string>
+    <string name="dboard_hot_weather_mean">Morbi non lectus eu tortor malesuada ornare. Mauris sagittis risus a augue laoreet volutpat. Etiam eget felis sed magna luctus rutrum. Phasellus ut efficitur libero. Cras sit amet elit viverra, molestie nisl quis, tempor erat. Nullam orci velit, semper nec arcu finibus, interdum ullamcorper libero. Nunc sagittis malesuada molestie. Aliquam lacinia sagittis massa. </string>
+    <string name="dboard_hot_weather">Hot Weather</string>
+    <string name="dboard_thunderstorms">Thunderstorms</string>
+    <string name="dboard_cold_damp_air">Cold or Damp Air</string>
+    <string name="dboard_sudden_temperature_change">Sudden Temperature Change</string>
+    <string name="dboard_pollen_detail_describ">Different types of pollen are released throughout the year which can affect your asthma. This pollen forecast can help you manage your symptoms and help reduce the impact of pollen on your health.</string>
+    <string name="dboard_pollen_tree_type">Tree Type</string>
+    <string name="dboard_pollen_grass_type">Grass Type</string>
+    <string name="dboard_pollen_herb_type">Herb Type</string>
+    <string name="dboard_air_quality_detail_describ">The air we breathe contains a lot of different particles, like dust, that can trigger asthma symptoms. Pollutants in the air, mainly from traffic and factories, can also irritate your airways.</string>
+    <string name="dboard_air_quality_good">Good</string>
+    <string name="dboard_air_quality_unhealthy">Unhealthy</string>
+    <string name="dboard_air_quality_hazardous">Hazardous</string>
+    <string name="dboard_air_quality_good_describ">Air quality is considered satisfactory, and poses little to no risk.</string>
+    <string name="dboard_air_quality_unhealthy_describ">Asthmatics are at risk from the presence of particles in the air.</string>
+    <string name="dboard_air_quality_hazardous_describ">Health alert: Everyone is likely to experience serious health effects.</string>
+
+    <!--Your Alerts-->
+    <string name="alerts_no_msgs">Nothing to see here!</string>
+    <string name="alerts_you_upto">you’re up to date!</string>
+    <string name="alerts_your_asq_due_to">Your ASQ is due!</string>
+    <string name="alerts_your_act_due_to">Your ACT is due!</string>
+    <string name="alerts_take_it_now">Take it now?</string>
+
+    <!--Settings-->
+    <string name="actionbar_settings">Settings</string>
+    <string name="settings_profile">Profile</string>
+    <string name="settings_asthma_medication">Asthma Medication</string>
+    <string name="settings_my_actigraph">My ActiGraph</string>
+    <string name="settings_notifications">Notifications</string>
+    <string name="settings_help_contact">Help and Contact</string>
+    <string name="settings_about">About</string>
+
+    <!--Profile Page-->
+    <string name="profile_login_detail">Login Details</string>
+    <string name="profile_change_password">Change current password</string>
+    <string name="profile_personal_info">Personal Information</string>
+    <string name="profile_save">Save</string>
+    <string name="profile_press_and_hold">Press and hold to change</string>
+
+    <!--Change Password-->
+    <string name="actionbar_change_password">Change your password</string>
+    <string name="change_psd_old_password">Old password</string>
+
+    <!--Settings Medication-->
+    <string name="settings_medic_add_another">Add another medication</string>
+    <string name="settings_medic_new_dosage">New dosage</string>
+    <string name="settings_medic_new_frequency">New frequency</string>
+    <string name="settings_medic_not_anymore">I’m not taking this medication anymore</string>
+
+    <!--Settings Details Updated-->
+    <string name="settings_detail_updated">Details updated! </string>
+
+    <!--Settings Notifications-->
+    <string name="settings_noti_basic_reminder">Basic Reminders and Prompts</string>
+    <string name="settings_noti_would_like">I would like to see reminders,\n prompts, etc.</string>
+    <string name="settings_noti_inact_reminder">Inactivity Reminders and Prompts</string>
+    <string name="settings_noti_remind_48">Remind me after 48 HOURS of inactivity</string>
+    <string name="settings_noti_remind_week">Remind me after 1 WEEK of inactivity</string>
+    <string name="settings_noti_remind_month">Remind me after 1 MONTH of inactivity</string>
+
+    <!--Settings Help and Contact-->
+    <string name="settings_help">Help</string>
+    <string name="settings_user_manual">User Manual</string>
+    <string name="settings_contact">Contact Us</string>
+    <string name="settings_contact_detail">For general enquiries, please call our corporate switchboard or, if unavailable, fill in the enquiry form below.\n\n
+                    For specific enquiries related to investors, media, community partnerships or careers, please visit our corporate site.\n\n
+                    Adverse events should be reported to the Medicines and Healthcare Products Regulatory Agency (MHRA). Reporting forms and information can be found at: </string>
+    <string name="settings_contact_url">www.mhra.gov.uk/yellowcard</string>
+    <string name="settings_adverse_events">Adverse Events</string>
+    <string name="settings_adverse_events_detail">All side effects on medicines should be reported. For side effects on GSK medicines please report to:</string>
+    <string name="settings_help_contact_number1">+44 (0) 800 221 441</string>
+    <string name="settings_help_contact_number2">+44 (0) 208 047 5000</string>
+    <string name="settings_customer_email">customercontactuk@gsk.com</string>
+    <string name="settings_consumer_email">customer.relations@gsk.com</string>
+    <string name="settings_help_or_with">or with the </string>
+    <string name="settings_report_adverse">Report an Adverse Event Form</string>
+    <string name="settings_uk_contact_details">United Kingdom Contact Details</string>
+    <string name="settings_customer_contact_center">Customer Contact Center</string>
+    <string name="settings_consumer_healthcare">Consumer Healthcare</string>
+    <string name="settings_co_sboard">Corporate Switchboard</string>
+    <string name="settings_help_version">Version</string>
+    <string name="settings_help_version_number">1.0.0</string>
+    <string name="settings_help_user_agree">User Agreement</string>
+    <string name="settings_agree_detail">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida scelerisque lectus, sed lobortis orci posuere sed. Cras aliquam id ligula nec sollicitudin. Ut ut ligula purus. Phasellus lacinia, odio nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida scelerisque lectus, sed lobortis orci posuere sed. Cras aliquam id ligula nec sollicitudin. Ut ut ligula purus. Phasellus lacinia, odio nec.\n\n
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis felis vitae efficitur egestas. Nam dapibus ultricies ipsum laoreet volutpat. Praesent nunc orci, pulvinar a porttitor sed, ornare ac sem. Ut malesuada velit libero, id aliquam sapien varius in.</string>
+
+    <!--Settings Adding Reviewing Data-->
+    <string name="settings_adding">Adding Data</string>
+    <string name="settings_adding_detail">Adding data for things like ACT, ASQ, attacks and spirometry, peak flow and weight couldn’t be easier</string>
+    <string name="settings_adding_simply_tap">Simply tap the ‘Add data’ buttons\n
+                    to add data to your desired choice</string>
+    <string name="settings_adding_got_it">Got it!</string>
+    <string name="settings_reviewing">Reviewing Data</string>
+    <string name="settings_reviewing_detail">Once you have added data in to your chosen areas you can view it in more detail from your dashboard.    </string>
+    <string name="settings_review_simply_tap">Simply tap on the graph</string>
+</resources>

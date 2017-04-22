@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Style for "marker_bar" -->
+    <!-- Add this snippet to layer-list xml in drawable. -->
+    <item android:width="245dp" android:height="16dp">
+        <shape android:shape="rectangle">
+            <gradient android:type="linear" android:useLevel="true" android:startColor="#ffbe69d4" android:endColor="#ffea60b1" android:angle="45" />
+            <item name="android:shadowColor">#334a486d</item>
+            <!-- TextView shadow offsets do not respect scale. -->
+            <item name="android:shadowDx">0</item>
+            <item name="android:shadowDy">2</item>
+        </shape>
+    </item>
+</selector>

@@ -1,0 +1,210 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-6dp">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="@android:color/black" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@color/little_bar_progress"
+                android:layout_weight="6" />
+            <View
+                android:layout_width="fill_parent"
+                android:layout_height="6dp"
+                android:background="@android:color/black"
+                android:layout_weight="1" />
+        </LinearLayout>
+    </RelativeLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_action">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_47dp"
+                android:background="@color/normal_back">
+                <LinearLayout
+                    android:orientation="vertical"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true">
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:text="We would like to know a little more about you"
+                        android:textStyle="normal"
+                        android:layout_gravity="left" />
+                    <TextView
+                        style="@style/DetailInformationTextView"
+                        android:text="so we can personalise your experience using"
+                        android:textStyle="normal"
+                        android:layout_gravity="left" />
+                    <LinearLayout
+                        android:orientation="horizontal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content">
+                        <TextView
+                            style="@style/DetailInformationTextView"
+                            android:layout_height="match_parent"
+                            android:text="the "
+                            android:textStyle="normal"
+                            android:layout_marginRight="0dp"
+                            android:layout_gravity="left" />
+                        <TextView
+                            style="@style/DetailInformationTextView"
+                            android:text="AsthmaTrack"
+                            android:layout_marginLeft="0dp"
+                            android:layout_marginRight="0dp"
+                            android:layout_gravity="left" />
+                        <TextView
+                            style="@style/DetailInformationTextView"
+                            android:layout_height="match_parent"
+                            android:text=" app"
+                            android:textStyle="normal"
+                            android:layout_marginLeft="0dp"
+                            android:layout_gravity="left" />
+                    </LinearLayout>
+                </LinearLayout>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/little_person_info"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_15dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:textColor="@color/text_label_light"
+                    android:text="@string/little_height"
+                    android:layout_marginLeft="@dimen/pad_7dp" />
+                <TextView
+                    android:id="@+id/tvHeightValue"
+                    style="@style/LabelTextView"
+                    android:textColor="@color/text_label_same_back"
+                    android:text="178cm   |   5’10”   |   70"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:layout_marginRight="@dimen/pad_7dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnAddHeight"
+                style="@style/ButtonWhiteBackPinkText"
+                android:text="@string/little_add_height_btn"
+                android:layout_marginTop="@dimen/pad_7dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:textColor="@color/text_label_light"
+                    android:text="@string/little_weight"
+                    android:layout_marginLeft="@dimen/pad_7dp" />
+                <TextView
+                    android:id="@+id/tvWeightValue"
+                    style="@style/LabelTextView"
+                    android:textColor="@color/text_label_same_back"
+                    android:text="136.2kg   |   300.3lbs   |   21st 4lbs"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:layout_marginRight="@dimen/pad_7dp"
+                    android:layout_alignParentRight="true" />
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnAddWeight"
+                style="@style/ButtonWhiteBackPinkText"
+                android:text="@string/little_add_weight_btn"
+                android:layout_marginTop="@dimen/pad_7dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/little_asthma_info"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <TextView
+                style="@style/LabelTextView"
+                android:textColor="@color/text_label_light"
+                android:text="@string/little_height"
+                android:layout_marginTop="@dimen/pad_7dp"
+                android:layout_marginLeft="@dimen/pad_7dp" />
+            <ListView
+                android:id="@+id/lstMedication"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="@dimen/pad_3dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:visibility="gone" />
+            <RelativeLayout
+                android:id="@+id/rlSelectedMedication"
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_22dp"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:background="@drawable/selected_medication">
+                <TextView
+                    android:id="@+id/tvSelectedMedic"
+                    style="@style/LabelTextView"
+                    android:text="Steriod Tablets"
+                    android:textStyle="normal"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:textColor="@color/normal_back"/>
+                <Button
+                    android:id="@+id/btnCancelSelectedMedic"
+                    android:layout_width="@dimen/pad_10dp"
+                    android:layout_height="@dimen/pad_10dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/ic_item_cancel"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="@dimen/pad_7dp"/>
+            </RelativeLayout>
+            <Button
+                android:id="@+id/btnAddMedic"
+                style="@style/ButtonWhiteBackPinkText"
+                android:text="@string/little_add_medication"
+                android:background="@drawable/rounded_btn_white_pink_border"
+                android:layout_marginTop="@dimen/pad_7dp" />
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/header_action"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@color/settings_actionbar">
+            <LinearLayout
+                android:id="@+id/home_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_back"
+                    android:visibility="gone"/>
+
+                <ImageView
+                    android:id="@+id/iv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_cancel"
+                    android:visibility="gone"/>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/pad_10dp"
+                android:layout_toRightOf="@+id/home_icon_layout"
+                android:textSize="@dimen/txt_9_sp"
+                android:text=""/>
+
+            <TextView
+                android:id="@+id/btnAction"
+                style="@style/WhiteNormalText"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/txt_9_sp"
+                android:textColor="@color/action_btn_enable"
+                android:text=""/>
+
+            <ImageView
+                android:id="@+id/btnAlerts"
+                android:layout_width="@dimen/pad_10dp"
+                android:layout_height="@dimen/pad_10dp"
+                android:visibility="gone"
+                android:layout_marginRight="@dimen/pad_15dp"
+                android:layout_toLeftOf="@+id/btnSettings"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_alerts"/>
+            <ImageView
+                android:id="@+id/btnSettings"
+                android:layout_width="@dimen/pad_10dp"
+                android:layout_height="@dimen/pad_10dp"
+                android:layout_marginRight="@dimen/pad_10dp"
+                android:visibility="gone"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_settings"/>
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/actionbar_shadow_back"/>
+
+</LinearLayout>

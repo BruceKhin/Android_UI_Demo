@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#3F51B5</color>
+    <color name="colorPrimaryDark">#303F9F</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="actionBarColor_Dark">#5b597d</color>
+    <color name="statusBarColor_Dark">#555370</color>
+    <color name="actionBarColor_Light">#a9a0e3</color>
+    <color name="statusBarColor_Light">#938cc2</color>
+    <color name="black_overlay">#66000000</color>
+    <color name="action_btn_disable">#d3cefe</color>
+    <color name="action_btn_enable">#4b486d</color>
+    <color name="text_label">#d0cdeb</color>
+    <color name="text_label_light">#8065b9</color>
+    <color name="text_label_same_back">#5b587d</color>
+    <color name="action_btn_pink">#ed8dc7</color>
+    <color name="btn_decline">#ebedf1</color>
+    <color name="normal_back">#5b587d</color>
+    <color name="sub_title_back">#ebedf1</color>
+    <color name="own_pink">#d96eae</color>
+    <color name="disable_button_text">#aab2bd</color>
+    <color name="btn_disable_light">#ebedf1</color>
+
+    <!--Splash Screen Color-->
+    <color name="splashProductDateBack">#4b486d</color>
+    <color name="splashEnvProvideBack">#6a55ba</color>
+    <color name="splashCopyrightBack">#7660c9</color>
+
+    <!--Activation Code-->
+    <color name="textPurple">#cecce8</color>
+    <color name="alertError">#fd7da2</color>
+
+    <!--Terms of Use-->
+    <color name="termsText">#5b587d</color>
+    <color name="declineBtn">#5b587d</color>
+
+    <!--Login-->
+    <color name="password_show">#d96eae</color>
+
+    <!--A little about you-->
+    <color name="little_bar_progress">#3fd0ad</color>
+    <color name="little_tap_btn_back">#f5f7fa</color>
+    <color name="little_tap_btn_grey_border">#ccd1d9</color>
+    <color name="little_tap_btn_drkwhite_border">#ebedf1</color>
+    <color name="little_tap_btn_pink_border">#d96eae</color>
+
+    <!--Add medication-->
+    <color name="add_medic_times_day">#656d78</color>
+
+    <!--Add Height and Weight-->
+    <color name="add_hw_title_back">#8fffffff</color>
+    <color name="add_hw_ruler_back">#4b486d</color>
+
+    <!--Dashboard-->
+    <color name="dboard_last_update_text">#7F8790</color>
+    <color name="dboard_item_plus_button_back">#F0f2f3</color>
+    <color name="dboard_no_data_green">#00C1A2</color>
+    <color name="dboard_no_data_red">#FF80A5</color>
+    <color name="dboard_no_data_blue">#369AE0</color>
+    <color name="dboard_spirometry_speed_border">#D0D0EA</color>
+    <color name="dboard_data_unavailable_text">#ffabc3</color>
+
+    <!--Dashboard Weather, Pollen, Air Detail Page-->
+    <color name="dboard_detail_sub_title_back">#a89de4</color>
+    <color name="dboard_detail_data_back">#4b486d</color>
+
+    <!--Settings-->
+    <color name="settings_actionbar">#4D90E0</color>
+    <color name="settings_back">#EAEDF1</color>
+
+    <!--Profile-->
+    <color name="profile_email_left_back">#dadfe8</color>
+    <color name="profile_password_left_back">#4990e2</color>
+    <color name="profile_email_text">#656d78</color>
+    <color name="profile_password_text">#5b587d</color>
+    <color name="profile_btn_text">#4a90e2</color>
+</resources>

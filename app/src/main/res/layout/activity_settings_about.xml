@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+
+    <ScrollView
+        android:id="@+id/scrView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-5dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_width="@dimen/pad_34dp"
+                android:layout_height="@dimen/pad_35dp"
+                android:layout_marginTop="@dimen/pad_12dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_settings_about"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_help_version"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <LinearLayout
+                    android:orientation="horizontal"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_32dp">
+
+                    <TextView
+                        style="@style/LabelTextView"
+                        android:layout_gravity="center_vertical"
+                        android:textColor="@color/profile_password_text"
+                        android:textSize="@dimen/txt_8_sp"
+                        android:textStyle="normal"
+                        android:layout_weight="1"
+                        android:layout_marginLeft="@dimen/pad_10dp"
+                        android:text="@string/settings_user_manual"/>
+                </LinearLayout>
+            </LinearLayout>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="@dimen/pad_18dp"
+                android:background="@color/sub_title_back"
+                android:layout_marginTop="@dimen/pad_15dp"
+                android:paddingLeft="@dimen/pad_7dp">
+                <TextView
+                    style="@style/LabelTextView"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:text="@string/settings_help_user_agree"
+                    android:textColor="@color/text_label_same_back" />
+            </RelativeLayout>
+            <TextView
+                style="@style/LabelTextView"
+                android:textColor="@color/normal_back"
+                android:textStyle="normal"
+                android:text="@string/settings_agree_detail"
+                android:textSize="@dimen/txt_7_sp"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:lineSpacingMultiplier="1.3"
+                android:layout_marginBottom="@dimen/pad_10dp"
+                android:layout_marginLeft="@dimen/pad_11dp"
+                android:layout_marginRight="@dimen/pad_20dp"/>
+
+            <TextView
+                style="@style/LabelTextView"
+                android:textColor="@android:color/white"
+                android:text="@string/splash_product_date"
+                android:layout_margin="0dp"
+                android:layout_width="match_parent"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:paddingTop="@dimen/pad_3dp"
+                android:paddingBottom="@dimen/pad_3dp"
+                android:background="@color/dboard_no_data_blue"/>
+        </LinearLayout>
+
+    </ScrollView>
+</RelativeLayout>
