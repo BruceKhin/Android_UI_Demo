@@ -74,4 +74,10 @@
     <color name="profile_email_text">#656d78</color>
     <color name="profile_password_text">#5b587d</color>
     <color name="profile_btn_text">#4a90e2</color>
+
+    <!--Review Attack-->
+    <color name="review_tab_selected">#fffe94</color>
+    <color name="review_graph_title">#3d3b5b</color>
+    <color name="review_green_text">#00e3a8</color>
+    <color name="review_yellow_text">#ffb242</color>
 </resources>

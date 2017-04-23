@@ -21,18 +21,7 @@
             android:layout_marginTop="@dimen/pad_2dp"
             android:layout_above="@+id/btnGotIt"
             android:layout_height="match_parent" />
-        <DK.Ostebaronen.Droid.ViewPagerIndicator.CirclePageIndicator
-            android:id="@+id/indicator"
-            android:layout_above="@+id/btnGotIt"
-            android:paddingBottom="@dimen/pad_5dp"
-            android:layout_height="wrap_content"
-            android:layout_width="fill_parent"
-            android:background="@android:color/transparent"
-            app:radius="3dp"
-            app:fillColor="@android:color/white"
-            app:pageColor="#ADADBF"
-            app:strokeColor="@android:color/transparent"
-            app:strokeWidth="0dp"/>
+
         <Button
             android:id="@+id/btnGotIt"
             style="@style/ButtonWhiteBackPinkText"

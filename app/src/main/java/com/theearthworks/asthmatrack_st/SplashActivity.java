@@ -18,7 +18,7 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dboard_graph);
+        setContentView(R.layout.activity_review_attacks);
 
     }
 
