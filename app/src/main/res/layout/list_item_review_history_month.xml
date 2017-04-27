@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlOptionItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_20dp"
+        android:background="@color/sub_title_back">
+        <TextView
+            android:id="@+id/tvMonthYear"
+            style="@style/LabelTextView"
+            android:textStyle="bold"
+            android:textColor="@color/normal_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:text="July 2016"/>
+    </RelativeLayout>
+</RelativeLayout>

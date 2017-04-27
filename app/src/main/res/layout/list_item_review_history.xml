@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+    <RelativeLayout
+        android:id="@+id/rlOptionItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_30dp">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true">
+            <ImageView
+                android:id="@+id/ivDataMarkImg"
+                android:layout_width="@dimen/pad_12dp"
+                android:layout_height="@dimen/pad_12dp"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="@dimen/pad_10dp"
+                android:src="@drawable/ic_person_avatar"/>
+            <TextView
+                android:id="@+id/tvDataMainInfo"
+                style="@style/LabelTextView"
+                android:text="Attack"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/pad_7dp"
+                android:layout_marginRight="0dp"
+                android:textSize="@dimen/txt_8_sp"
+                android:textColor="@color/normal_back"/>
+            <TextView
+                android:id="@+id/tvDataOtherInfo"
+                style="@style/LabelTextView"
+                android:text="(2)"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:layout_marginLeft="@dimen/pad_3dp"
+                android:textSize="@dimen/txt_8_sp"
+                android:textColor="@color/disable_button_text"/>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/tvReviewDate"
+            style="@style/LabelTextView"
+            android:layout_toLeftOf="@+id/ivGoDetail"
+            android:layout_centerVertical="true"
+            android:textStyle="normal"
+            android:layout_marginRight="@dimen/pad_7dp"
+            android:textColor="@color/normal_back"
+            android:text="30 July 16"/>
+        <ImageView
+            android:id="@+id/ivGoDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="@dimen/pad_15dp"
+            android:src="@drawable/ic_settings_detail_right" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/profile_email_left_back"/>
+    </RelativeLayout>
+</RelativeLayout>

@@ -354,5 +354,5 @@
     <string name="review_days_logged">Days\n logged</string>
     <string name="review_attacks">Attacks</string>
     <string name="review_times_hospitalise">Times Hospitalised</string>
-
+    <string name="review_logged_attack_data">Logged Attack Data</string>
 </resources>
