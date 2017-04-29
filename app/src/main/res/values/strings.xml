@@ -362,4 +362,10 @@
     <string name="review_total_calories">Total\n Calories</string>
     <string name="review_select_data_point">Select a data point for more details</string>
     <string name="review_logged_activity_data">Logged Activity Data</string>
+
+    <!--Review Peak Flow-->
+    <string name="review_peak_flow">Review Peak Flow</string>
+    <string name="review_highest_peak_flow">Highest Peak Flow</string>
+    <string name="review_average_reading">Average Reading</string>
+
 </resources>

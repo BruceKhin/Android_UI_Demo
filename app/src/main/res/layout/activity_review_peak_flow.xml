@@ -11,7 +11,7 @@
         android:orientation="vertical"
         android:layout_width="match_parent"
         android:id="@+id/header_action"
-        android:background="@drawable/review_activity_back"
+        android:background="@drawable/review_peak_flow_back"
         android:layout_height="wrap_content">
         <RelativeLayout
             android:layout_width="match_parent"
@@ -28,13 +28,13 @@
                     android:layout_width="@dimen/pad_10dp"
                     android:layout_height="@dimen/pad_8dp"
                     android:layout_marginLeft="@dimen/pad_7dp"
-                    android:visibility="gone"
                     android:src="@drawable/ic_back" />
                 <ImageView
                     android:id="@+id/iv_cancel"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="15dp"
+                    android:visibility="gone"
                     android:src="@drawable/ic_cancel" />
             </LinearLayout>
             <TextView
@@ -47,7 +47,7 @@
                 android:layout_marginLeft="@dimen/pad_10dp"
                 android:layout_toRightOf="@+id/home_icon_layout"
                 android:textSize="@dimen/txt_8_sp"
-                android:text="@string/review_activity" />
+                android:text="@string/review_peak_flow" />
             <TextView
                 android:id="@+id/btnAction"
                 style="@style/WhiteNormalText"
@@ -187,7 +187,7 @@
                         android:textSize="@dimen/txt_7_sp"
                         android:layout_marginTop="@dimen/pad_2dp"
                         android:gravity="center"
-                        android:text="@string/review_active_hrs" />
+                        android:text="@string/review_highest_peak_flow" />
                 </LinearLayout>
                 <LinearLayout
                     android:orientation="vertical"
@@ -210,7 +210,7 @@
                         android:layout_marginLeft="0dp"
                         android:textSize="@dimen/txt_7_sp"
                         android:gravity="center"
-                        android:text="@string/review_total_calories" />
+                        android:text="@string/review_average_reading" />
                 </LinearLayout>
             </LinearLayout>
             <RelativeLayout
@@ -251,23 +251,9 @@
                         style="@style/LabelTextView"
                         android:layout_margin="0dp"
                         android:textSize="@dimen/txt_7_sp"
-                        android:textColor="@color/review_activity_detail_yellow"
-                        android:text="10,999 steps" />
-                    <TextView
-                        style="@style/LabelTextView"
-                        android:layout_marginTop="0dp"
-                        android:layout_marginLeft="@dimen/pad_2dp"
-                        android:layout_marginRight="@dimen/pad_2dp"
-                        android:textSize="@dimen/txt_7_sp"
-                        android:gravity="center"
-                        android:textColor="@color/review_activity_detail_yellow"
-                        android:text="·" />
-                    <TextView
-                        style="@style/LabelTextView"
-                        android:layout_margin="0dp"
-                        android:textSize="@dimen/txt_7_sp"
-                        android:textColor="@color/review_activity_detail_yellow"
-                        android:text="5h 45m active" />
+                        android:textColor="@color/review_blue_text"
+                        android:text="350 litres per minute" />
+
                 </LinearLayout>
             </RelativeLayout>
         </LinearLayout>
