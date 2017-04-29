@@ -368,4 +368,8 @@
     <string name="review_highest_peak_flow">Highest Peak Flow</string>
     <string name="review_average_reading">Average Reading</string>
 
+    <!--Review Mood-->
+    <string name="review_mood">Review Mood</string>
+    <string name="review_looged_mood_data">Logged Mood Data</string>
+
 </resources>

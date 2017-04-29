@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px"
+    android:background="@android:color/white">
+    <!--Action bar and Tab layout-->
+
+    <ListView
+        android:id="@+id/lstReviewHistory"
+        android:layout_below="@+id/header_action"
+        android:layout_marginTop="-5dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:id="@+id/header_action"
+        android:layout_height="wrap_content">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="@drawable/review_mood_back">
+            <LinearLayout
+                android:id="@+id/home_icon_layout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="12dp"
+                android:orientation="horizontal">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="@dimen/pad_10dp"
+                    android:layout_height="@dimen/pad_8dp"
+                    android:layout_marginLeft="@dimen/pad_7dp"
+                    android:src="@drawable/ic_back" />
+                <ImageView
+                    android:id="@+id/iv_cancel"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:padding="15dp"
+                    android:src="@drawable/ic_cancel"
+                    android:visibility="gone" />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/tv_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@android:color/white"
+                android:layout_centerVertical="true"
+                android:gravity="right"
+                android:layout_marginLeft="@dimen/pad_10dp"
+                android:layout_toRightOf="@+id/home_icon_layout"
+                android:textSize="@dimen/txt_8_sp"
+                android:text="@string/review_looged_mood_data" />
+            <TextView
+                android:id="@+id/btnAction"
+                style="@style/WhiteNormalText"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:textSize="@dimen/txt_8_sp"
+                android:textColor="@android:color/white"
+                android:text="@string/action_btn_edit" />
+        </RelativeLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/actionbar_shadow_back"/>
+    </LinearLayout>
+</RelativeLayout>
