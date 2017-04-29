@@ -35,7 +35,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:padding="15dp"
-                    android:src="@drawable/ic_cancel"/>
+                    android:src="@drawable/ic_cancel" />
             </LinearLayout>
             <TextView
                 android:id="@+id/tv_title"
@@ -84,8 +84,8 @@
                     android:background="@color/review_tab_selected" />
             </LinearLayout>
             <LinearLayout
-                android:orientation="vertical"
                 android:id="@+id/llMonthBtn"
+                android:orientation="vertical"
                 android:layout_width="fill_parent"
                 android:layout_height="wrap_content"
                 android:layout_weight="1">
@@ -137,7 +137,8 @@
                 android:layout_marginLeft="@dimen/pad_25dp"
                 android:layout_marginRight="@dimen/pad_25dp"
                 android:background="@drawable/dboard_graph_horizontal_dash_line"
-                android:layout_marginBottom="@dimen/pad_8dp" />
+                android:layout_marginTop="@dimen/pad_4dp"
+                android:layout_marginBottom="@dimen/pad_4dp" />
             <LinearLayout
                 android:orientation="horizontal"
                 android:layout_width="match_parent"
@@ -217,11 +218,22 @@
                 android:layout_height="wrap_content"
                 android:layout_marginTop="@dimen/pad_5dp"
                 android:background="@color/review_graph_title">
+
+                <TextView
+                    android:id="@+id/tvSelectDataPoint"
+                    style="@style/LabelTextView"
+                    android:layout_margin="0dp"
+                    android:textSize="@dimen/txt_8_sp"
+                    android:layout_centerInParent="true"
+                    android:text="@string/review_select_data_point" />
+
                 <LinearLayout
+                    android:id="@+id/llPointDetailInfo"
                     android:orientation="horizontal"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
+                    android:visibility="invisible"
                     android:layout_marginTop="@dimen/pad_5dp"
                     android:layout_marginBottom="@dimen/pad_5dp">
                     <TextView

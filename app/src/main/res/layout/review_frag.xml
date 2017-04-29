@@ -6,168 +6,182 @@
     android:background="@color/normal_back"
     android:minWidth="25px"
     android:minHeight="25px">
-
     <!--Graph Data Layout-->
     <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent">
-        <RelativeLayout
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/pad_3dp">
+        <!--Graph Bar Set Background Layout-->
+        <LinearLayout
+            android:id="@+id/llGraphBarSetBack"
+            android:orientation="horizontal"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:layout_marginBottom="@dimen/pad_3dp">
-
-            <!--Graph Bar Set Background Layout-->
-            <LinearLayout
-                android:id="@+id/llGraphBarSetBack"
-                android:orientation="horizontal"
+            android:layout_toRightOf="@+id/rlYAxis"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginLeft="@dimen/pad_5dp">
+            <!--<View-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_weight="1"-->
+            <!--android:visibility="invisible"-->
+            <!--android:background="@drawable/rounded_graph_bar_selected_back"/>-->
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rlTopBorderBack"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <View
+                android:id="@+id/ivTopBorderBack"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_toRightOf="@+id/rlYAxis"
-                android:layout_marginRight="@dimen/pad_10dp"
-                android:layout_marginLeft="@dimen/pad_5dp">
-                <!--<View-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="match_parent"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:visibility="invisible"-->
-                    <!--android:background="@drawable/rounded_graph_bar_selected_back"/>-->
-            </LinearLayout>
-
-            <ImageView
+                android:layout_height="@dimen/pad_2dp"
+                android:background="@color/review_green_text" />
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="@dimen/pad_5dp"
-                android:background="@drawable/review_graph_date_line"/>
+                android:layout_height="4dp"
+                android:layout_below="@+id/ivTopBorderBack"
+                android:background="@drawable/actionbar_shadow_back"/>
+        </RelativeLayout>
 
-            <!--Graph Bar Set Mark Layout-->
+        <!--Graph Bar Set Mark Layout-->
+        <LinearLayout
+            android:id="@+id/llGraphBarSetMark"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlYAxis"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginLeft="@dimen/pad_5dp">
+            <!--<ImageView-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_gravity="top"-->
+            <!--android:visibility="invisible"-->
+            <!--android:src="@drawable/review_graph_selected_bar_mark"/>-->
+        </LinearLayout>
+        <!--Y Axis Value Layout-->
+        <RelativeLayout
+            android:id="@+id/rlYAxis"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:layout_marginTop="@dimen/pad_13dp"
+            android:layout_marginBottom="-4dp"
+            android:layout_above="@+id/llXAxis">
             <LinearLayout
-                android:id="@+id/llGraphBarSetMark"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_toRightOf="@+id/rlYAxis"
-                android:layout_marginRight="@dimen/pad_10dp"
-                android:layout_marginLeft="@dimen/pad_5dp">
-
-                <!--<ImageView-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="wrap_content"-->
-                    <!--android:layout_gravity="top"-->
-                    <!--android:visibility="invisible"-->
-                    <!--android:src="@drawable/review_graph_selected_bar_mark"/>-->
-
-            </LinearLayout>
-
-            <!--Y Axis Value Layout-->
-            <LinearLayout
-                android:id="@+id/rlYAxis"
+                android:id="@+id/llYAxis"
                 android:orientation="vertical"
                 android:layout_width="wrap_content"
                 android:layout_height="match_parent"
-                android:layout_marginLeft="@dimen/pad_10dp"
-                android:layout_marginTop="@dimen/pad_10dp"
-                android:layout_above="@+id/llXAxis">
+                android:layout_above="@+id/tvYAxisZero">
                 <!--<TextView-->
-                    <!--android:id="@+id/tvYAxisTop6"-->
-                    <!--android:layout_height="fill_parent"-->
-                    <!--android:layout_width="wrap_content"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:gravity="center_vertical"-->
-                    <!--android:textColor="@color/text_label"-->
-                    <!--android:text="5" />-->
-
+                <!--android:id="@+id/tvYAxisTop6"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_weight="1"-->
+                <!--style="@style/AxisTextView"-->
+                <!--android:gravity="top"-->
+                <!--android:textColor="@color/text_label"-->
+                <!--android:text="5" />-->
             </LinearLayout>
-
-            <!--Y Axis Step Line-->
+            <TextView
+                android:id="@+id/tvYAxisZero"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                style="@style/AxisTextView"
+                android:layout_alignParentBottom="true"
+                android:gravity="center_vertical"
+                android:textColor="@color/text_label"
+                android:text="0" />
+        </RelativeLayout>
+        <!--Y Axis Step Line-->
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlYAxis"
+            android:layout_above="@+id/llXAxis"
+            android:layout_marginTop="@dimen/pad_17dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginBottom="@dimen/pad_2dp"
+            android:layout_marginLeft="@dimen/pad_5dp">
             <LinearLayout
                 android:id="@+id/llYAxisStepLine"
                 android:orientation="vertical"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_toRightOf="@+id/rlYAxis"
-                android:layout_marginTop="@dimen/pad_10dp"
-                android:layout_marginRight="@dimen/pad_10dp"
-                android:layout_above="@+id/llXAxis"
-                android:layout_marginLeft="@dimen/pad_5dp">
-                <!--<View-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="fill_parent"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:gravity="center_vertical"-->
-                    <!--android:background="@drawable/dboard_graph_horizontal_dash_line"/>-->
-               <!---->
-                <!--<View-->
-                    <!--android:layout_width="match_parent"-->
-                    <!--android:layout_height="fill_parent"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:gravity="center_vertical"-->
-                    <!--android:alpha="0.5"-->
-                    <!--android:background="@drawable/add_hw_progress_horizontal_line"/>-->
-
-            </LinearLayout>
-
-            <!--Graph Bar Line Layout-->
-            <LinearLayout
-                android:id="@+id/llGraphBarLine"
-                android:orientation="horizontal"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:layout_toRightOf="@+id/rlYAxis"
-                android:layout_above="@+id/llXAxis"
-                android:layout_marginTop="@dimen/pad_10dp"
-                android:layout_marginRight="@dimen/pad_10dp"
-                android:paddingTop="@dimen/pad_6dp"
-                android:layout_marginLeft="@dimen/pad_5dp"
-                android:paddingBottom="@dimen/pad_6dp">
+                android:layout_height="match_parent">
                 <!--<RelativeLayout-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="match_parent">-->
-                    <!--<View-->
-                        <!--android:id="@+id/vChat1"-->
-                        <!--android:layout_width="@dimen/pad_4dp"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:layout_centerHorizontal="true"-->
-                        <!--android:background="@drawable/dboard_attacks_graph_back"/>-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="fill_parent">-->
+                <!--<View-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="@dimen/pad_1dp"-->
+                <!--android:layout_weight="1"-->
+                <!--android:layout_alignParentTop="true"-->
+                <!--android:background="@drawable/dboard_graph_horizontal_dash_line"/>-->
                 <!--</RelativeLayout>-->
-                <!--<RelativeLayout-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:layout_height="match_parent">-->
-                    <!--<View-->
-                        <!--android:id="@+id/vChat2"-->
-                        <!--android:layout_width="@dimen/pad_4dp"-->
-                        <!--android:layout_height="match_parent"-->
-                        <!--android:layout_centerHorizontal="true"-->
-                        <!--android:background="@drawable/dboard_attacks_graph_yellow_back"/>-->
-                <!--</RelativeLayout>-->
-
             </LinearLayout>
-
-            <!--X Axis Value Layout-->
-            <LinearLayout
-                android:id="@+id/llXAxis"
-                android:orientation="horizontal"
+            <View
                 android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_toRightOf="@+id/rlYAxis"
-                android:layout_marginRight="@dimen/pad_10dp"
-                android:layout_marginLeft="@dimen/pad_5dp"
-                android:layout_marginBottom="@dimen/pad_3dp"
-                android:layout_alignParentBottom="true">
-                <!--<TextView-->
-                    <!--style="@style/AxisTextView"-->
-                    <!--android:layout_width="fill_parent"-->
-                    <!--android:gravity="center"-->
-                    <!--android:layout_weight="1"-->
-                    <!--android:textColor="@color/text_label"-->
-                    <!--android:layout_centerInParent="true"-->
-                    <!--android:text="M" />-->
-
-            </LinearLayout>
+                android:layout_height="@dimen/pad_1dp"
+                android:alpha="0.5"
+                android:gravity="center_vertical"
+                android:layout_alignBottom="@+id/llYAxisStepLine"
+                android:background="@android:color/white" />
         </RelativeLayout>
-
+        <!--Graph Bar Line Layout-->
+        <LinearLayout
+            android:id="@+id/llGraphBarLine"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_toRightOf="@+id/rlYAxis"
+            android:layout_above="@+id/llXAxis"
+            android:layout_marginTop="@dimen/pad_15dp"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginLeft="@dimen/pad_5dp">
+            <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<View-->
+            <!--android:id="@+id/vChat1"-->
+            <!--android:layout_width="@dimen/pad_4dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/dboard_attacks_graph_back"/>-->
+            <!--</RelativeLayout>-->
+            <!--<RelativeLayout-->
+            <!--android:layout_weight="1"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:layout_height="match_parent">-->
+            <!--<View-->
+            <!--android:id="@+id/vChat2"-->
+            <!--android:layout_width="@dimen/pad_4dp"-->
+            <!--android:layout_height="match_parent"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:background="@drawable/dboard_attacks_graph_yellow_back"/>-->
+            <!--</RelativeLayout>-->
+        </LinearLayout>
+        <!--X Axis Value Layout-->
+        <LinearLayout
+            android:id="@+id/llXAxis"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@+id/rlYAxis"
+            android:layout_marginRight="@dimen/pad_10dp"
+            android:layout_marginLeft="@dimen/pad_5dp"
+            android:layout_marginBottom="@dimen/pad_3dp"
+            android:layout_alignParentBottom="true">
+            <!--<TextView-->
+            <!--style="@style/AxisTextView"-->
+            <!--android:layout_width="fill_parent"-->
+            <!--android:gravity="center"-->
+            <!--android:layout_weight="1"-->
+            <!--android:textColor="@color/text_label"-->
+            <!--android:layout_centerInParent="true"-->
+            <!--android:text="M" />-->
+        </LinearLayout>
     </RelativeLayout>
-
-
 </RelativeLayout>

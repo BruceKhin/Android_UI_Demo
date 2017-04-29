@@ -353,6 +353,13 @@
     <string name="review_month">MONTH</string>
     <string name="review_days_logged">Days\n logged</string>
     <string name="review_attacks">Attacks</string>
-    <string name="review_times_hospitalise">Times Hospitalised</string>
+    <string name="review_times_hospitalise">Times\n Hospitalised</string>
     <string name="review_logged_attack_data">Logged Attack Data</string>
+
+    <!--Review Activities-->
+    <string name="review_activity">Review Activity</string>
+    <string name="review_active_hrs">Hours\n Active</string>
+    <string name="review_total_calories">Total\n Calories</string>
+    <string name="review_select_data_point">Select a data point for more details</string>
+    <string name="review_logged_activity_data">Logged Activity Data</string>
 </resources>

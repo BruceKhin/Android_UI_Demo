@@ -273,16 +273,7 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:background="@drawable/rounded_graph_bar_selected_back" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -292,7 +283,8 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:layout_marginLeft="@dimen/pad_3dp"
+                    android:layout_marginRight="@dimen/pad_3dp">
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -302,18 +294,8 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/pad_2dp"
-                        android:background="@drawable/rounded_graph_bar_selected_back" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:layout_marginLeft="@dimen/pad_3dp"
+                    android:layout_marginRight="@dimen/pad_3dp">
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -323,18 +305,7 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
-                    <View
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginTop="@dimen/pad_2dp"
-                        android:background="@drawable/rounded_graph_bar_selected_back" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:layout_marginLeft="@dimen/pad_6dp">
                     <View
                         android:layout_width="match_parent"
                         android:layout_height="match_parent"
@@ -358,17 +329,7 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/review_graph_selected_bar_mark" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -379,7 +340,8 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:layout_marginLeft="@dimen/pad_6dp"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -390,7 +352,8 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:layout_marginLeft="@dimen/pad_6dp"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -401,29 +364,7 @@
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
                     android:layout_height="match_parent"
-                    android:visibility="invisible">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/review_graph_selected_bar_mark" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="invisible">
-                    <ImageView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_centerHorizontal="true"
-                        android:src="@drawable/review_graph_selected_bar_mark" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent"
-                    android:visibility="invisible">
+                    android:layout_marginLeft="@dimen/pad_6dp">
                     <ImageView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
@@ -596,9 +537,9 @@
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <View
-                        android:id="@+id/vChat1"
                         android:layout_width="@dimen/pad_4dp"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
@@ -608,21 +549,10 @@
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/pad_6dp"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <View
-                        android:id="@+id/vChat2"
-                        android:layout_width="@dimen/pad_4dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:background="@drawable/dboard_attacks_graph_yellow_back"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
-                    <View
-                        android:id="@+id/vChat3"
                         android:layout_width="@dimen/pad_4dp"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
@@ -632,9 +562,10 @@
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/pad_6dp"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <View
-                        android:id="@+id/vChat4"
                         android:layout_width="@dimen/pad_4dp"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
@@ -644,39 +575,16 @@
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="@dimen/pad_6dp">
                     <View
-                        android:id="@+id/vChat5"
                         android:layout_width="@dimen/pad_4dp"
                         android:layout_height="match_parent"
                         android:layout_centerHorizontal="true"
                         android:background="@drawable/dboard_attacks_graph_back"
                         android:layout_alignParentBottom="true" />
                 </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
-                    <View
-                        android:id="@+id/vChat6"
-                        android:layout_width="@dimen/pad_4dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:background="@drawable/dboard_attacks_graph_back"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="match_parent">
-                    <View
-                        android:id="@+id/vChat7"
-                        android:layout_width="@dimen/pad_4dp"
-                        android:layout_height="match_parent"
-                        android:layout_centerHorizontal="true"
-                        android:background="@drawable/dboard_attacks_graph_yellow_back"
-                        android:layout_alignParentBottom="true" />
-                </RelativeLayout>
+
             </LinearLayout>
 
         <!--X Axis Value Layout-->
@@ -693,7 +601,8 @@
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <TextView
                         android:id="@+id/tvXAxis1"
                         style="@style/AxisTextView"
@@ -704,68 +613,37 @@
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_6dp"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <TextView
-                        android:id="@+id/tvXAxis2"
                         style="@style/AxisTextView"
                         android:textColor="@color/text_label"
                         android:layout_centerInParent="true"
-                        android:text="T" />
+                        android:text="M" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_6dp"
+                    android:layout_marginRight="@dimen/pad_6dp">
                     <TextView
-                        android:id="@+id/tvXAxis3"
                         style="@style/AxisTextView"
                         android:textColor="@color/text_label"
                         android:layout_centerInParent="true"
-                        android:text="W" />
+                        android:text="M" />
                 </RelativeLayout>
                 <RelativeLayout
                     android:layout_weight="1"
                     android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/pad_6dp">
                     <TextView
-                        android:id="@+id/tvXAxis4"
                         style="@style/AxisTextView"
                         android:textColor="@color/text_label"
                         android:layout_centerInParent="true"
-                        android:text="T" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:id="@+id/tvXAxis5"
-                        style="@style/AxisTextView"
-                        android:textColor="@color/text_label"
-                        android:layout_centerInParent="true"
-                        android:text="F" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:id="@+id/tvXAxis6"
-                        style="@style/AxisTextView"
-                        android:textColor="@color/text_label"
-                        android:layout_centerInParent="true"
-                        android:text="S" />
-                </RelativeLayout>
-                <RelativeLayout
-                    android:layout_weight="1"
-                    android:layout_width="fill_parent"
-                    android:layout_height="wrap_content">
-                    <TextView
-                        android:id="@+id/tvXAxis7"
-                        style="@style/AxisTextView"
-                        android:textColor="@color/text_label"
-                        android:layout_centerInParent="true"
-                        android:text="S" />
+                        android:text="M" />
                 </RelativeLayout>
             </LinearLayout>
 

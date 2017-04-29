@@ -80,4 +80,7 @@
     <color name="review_graph_title">#3d3b5b</color>
     <color name="review_green_text">#00e3a8</color>
     <color name="review_yellow_text">#ffb242</color>
+
+    <!--Revie Activity-->
+    <color name="review_activity_detail_yellow">#ff8578</color>
 </resources>
