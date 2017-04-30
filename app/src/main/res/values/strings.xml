@@ -377,4 +377,13 @@
     <string name="review_sleep_hrs_bed">Hours in\n bed</string>
     <string name="review_sleep_hrs_asleep">Hours\n slept</string>
     <string name="review_logged_sleep_data">Logged Sleep Data</string>
+
+    <!--Review Weight-->
+    <string name="review_weight">Review Weight</string>
+    <string name="review_weight_lost">Weight\n lost/gained</string>
+    <string name="review_avr_weight">Average\n weight</string>
+    <string name="review_logged_weight_data">Logged Weight Data</string>
+
+    <!--Review ACT Scores-->
+    
 </resources>

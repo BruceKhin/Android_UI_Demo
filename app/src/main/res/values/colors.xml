@@ -82,6 +82,7 @@
     <color name="review_yellow_text">#ffb242</color>
     <color name="review_blue_text">#48c0eb</color>
     <color name="review_red_text">#ff7aa0</color>
+    <color name="review_pink_text">#e388ff</color>
 
     <!--Revie Activity-->
     <color name="review_activity_detail_yellow">#ff8578</color>
