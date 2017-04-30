@@ -385,5 +385,8 @@
     <string name="review_logged_weight_data">Logged Weight Data</string>
 
     <!--Review ACT Scores-->
-    
+    <string name="review_act_scores">Review ACT Scores</string>
+    <string name="review_act_tests_performed">Tests\n performed</string>
+    <string name="review_act_last_scores">Latest\n score </string>
+    <string name="review_act_reliever">Reliever uses\n since last ACT</string>
 </resources>
