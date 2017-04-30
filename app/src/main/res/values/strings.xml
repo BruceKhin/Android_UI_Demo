@@ -372,4 +372,9 @@
     <string name="review_mood">Review Mood</string>
     <string name="review_looged_mood_data">Logged Mood Data</string>
 
+    <!--Review Sleep-->
+    <string name="review_sleep">Review Sleep</string>
+    <string name="review_sleep_hrs_bed">Hours in\n bed</string>
+    <string name="review_sleep_hrs_asleep">Hours\n slept</string>
+    <string name="review_logged_sleep_data">Logged Sleep Data</string>
 </resources>
