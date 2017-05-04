@@ -389,4 +389,9 @@
     <string name="review_act_tests_performed">Tests\n performed</string>
     <string name="review_act_last_scores">Latest\n score </string>
     <string name="review_act_reliever">Reliever uses\n since last ACT</string>
+
+    <!--Your ASQ Test-->
+    <string name="your_asq_due_in">Next ASQ due in</string>
+    <string name="your_asq_tests">Your ASQ Tests</string>
+    <string name="zero_max_asq_detail">"0 = No or absent   10 = Worst imaginable"</string>
 </resources>
