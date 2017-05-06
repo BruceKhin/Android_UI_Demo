@@ -48,7 +48,7 @@
                 android:layout_marginLeft="@dimen/pad_10dp"
                 android:layout_toRightOf="@+id/home_icon_layout"
                 android:textSize="@dimen/txt_8_sp"
-                android:text="@string/test" />
+                android:text="@string/your_asq_tests" />
         </RelativeLayout>
     </LinearLayout>
     <!--Review Detail Information layout-->
@@ -112,11 +112,11 @@
                     <TextView
                         android:id="@+id/tvSelectDataPoint"
                         style="@style/LabelTextView"
-                        android:textSize="@dimen/txt_8_sp"
+                        android:textSize="@dimen/txt_9_sp"
                         android:layout_centerVertical="true"
                         android:layout_marginLeft="@dimen/pad_13dp"
-                        android:layout_marginTop="@dimen/pad_4dp"
-                        android:layout_marginBottom="@dimen/pad_4dp"
+                        android:layout_marginTop="@dimen/pad_3dp"
+                        android:layout_marginBottom="@dimen/pad_3dp"
                         android:textColor="@color/review_activity_detail_yellow"
                         android:text="2016" />
                 </RelativeLayout>
@@ -132,8 +132,49 @@
                 android:layout_marginRight="@dimen/pad_5dp"
                 android:layout_marginBottom="@dimen/pad_15dp">
                 <FrameLayout
+                    android:id="@+id/flASQGraph1"
                     android:layout_width="match_parent"
-                    android:layout_height="@dimen/pad_175dp"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph2"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph3"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph4"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph5"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph6"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph7"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph8"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
+                    android:layout_marginBottom="@dimen/pad_5dp" />
+                <FrameLayout
+                    android:id="@+id/flASQGraph9"
+                    android:layout_width="match_parent"
+                    android:layout_height="@dimen/pad_160dp"
                     android:layout_marginBottom="@dimen/pad_5dp" />
             </LinearLayout>
         </LinearLayout>

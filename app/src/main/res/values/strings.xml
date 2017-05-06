@@ -394,4 +394,13 @@
     <string name="your_asq_due_in">Next ASQ due in</string>
     <string name="your_asq_tests">Your ASQ Tests</string>
     <string name="zero_max_asq_detail">"0 = No or absent   10 = Worst imaginable"</string>
+
+    <!--Review Medications-->
+    <string name="review_medications">Review Medications</string>
+    <string name="review_medic_what_want">Which medication do you want to review?</string>
+    <string name="review_medic_your_current">Your current medication</string>
+    <string name="review_medic_your_previous">Your previous medication</string>
+    <string name="review_medic_dosage">Dosage</string>
+    <string name="review_medic_frequency">Frequency</string>
+    <string name="review_logged_medic_data">Logged Medications Data</string>
 </resources>

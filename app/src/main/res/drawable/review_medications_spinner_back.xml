@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item>
+
+        <layer-list>
+            <item>
+                <shape>
+                    <gradient android:angle="90" android:endColor="#d96eae" android:startColor="#d96eae" android:type="linear" />
+                    <corners android:radius="@dimen/pad_2dp" />
+                </shape>
+            </item>
+            <item android:right="@dimen/pad_10dp">
+                <bitmap android:gravity="center_vertical|right" android:src="@drawable/ic_spinner_dropdown_white" />
+
+            </item>
+        </layer-list>
+
+    </item>
+
+</selector>
