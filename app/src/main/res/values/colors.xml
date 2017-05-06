@@ -91,4 +91,7 @@
     <!--ASQ Test-->
     <color name="asq_test_year_txt_back">#2e2b48</color>
 
+    <!--Add Attacks-->
+    <color name="add_attack_medic_updated_back_border">#979797</color>
+    <color name="add_attack_medic_updated_back">#323232</color>
 </resources>

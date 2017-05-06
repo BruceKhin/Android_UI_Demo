@@ -403,4 +403,9 @@
     <string name="review_medic_dosage">Dosage</string>
     <string name="review_medic_frequency">Frequency</string>
     <string name="review_logged_medic_data">Logged Medications Data</string>
+
+    <!--Add an Attack-->
+    <string name="actionbar_add_attacks">Add an Attack</string>
+    <string name="add_attacks_since_change_medic">Has your medication changed since your last attack?</string>
+    <string name="add_attacks_medic_updated">Medications updated!</string>
 </resources>
