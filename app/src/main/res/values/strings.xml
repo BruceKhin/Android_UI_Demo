@@ -408,4 +408,7 @@
     <string name="actionbar_add_attacks">Add an Attack</string>
     <string name="add_attacks_since_change_medic">Has your medication changed since your last attack?</string>
     <string name="add_attacks_medic_updated">Medications updated!</string>
+    <string name="add_attacks_medic_changed">Have your \nmedications changed?</string>
+    <string name="add_attacks_select_medic">Select medication to change</string>
+    <string name="add_attacks_update_medication">Update Medication</string>
 </resources>
