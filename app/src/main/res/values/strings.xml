@@ -1,5 +1,12 @@
 <resources>
     <string name="app_name">AsthmaTrack_ST</string>
+
+    <!--Action Bar Button-->
+    <string name="action_btn_save">SAVE</string>
+    <string name="action_btn_next">NEXT</string>
+    <string name="action_btn_skip">SKIP</string>
+    <string name="action_btn_done">DONE</string>
+    <string name="action_btn_finish">FINISH</string>
     <string name="action_btn_edit">EDIT</string>
     <string name="yes">Yes</string>
     <string name="no">No</string>
@@ -32,6 +39,8 @@
     <string name="terms_sub_title">Pulvinar neque at sapien aliquet, in maximus risus aliquam. Fusce at ultrices neque, eu sodales odio.</string>
     <string name="terms_detail">Donec purus ligula, hendrerit elementum elementum vitae, vehicula eget dolor. Quisque ex diam, sollicitudin a massa in, accumsan faucibus justo. Duis hendrerit purus eget est ullamcorper imperdiet. Integer fringilla erat nisi, vel pharetra felis viverra vel. \n\n
                                 Suspendisse et magna vitae tortor bibendum vulputate. Proin luctus mattis nisi, non pulvinar arcu auctor sed. Fusce faucibus neque eget felis egestas condimentum. Vivamus sodales mi a nulla malesuada gravida. Cras porttitor urna vel nisi lobortis euismod. Nullam vitae est sed massa tempus viverra convallis ac nibh. Sed in eros quis nisl luctus scelerisque. Sed fringilla tortor sit amet sem consectetur, et ultrices ligula hendrerit. Nullam a odio sit amet magna sodales faucibus ultrices sed nibh. Nullam dapibus nunc a interdum imperdiet. Nullam convallis dolor at urna ullamcorper mollis. Maecenas facilisis fringilla urna ut pellentesque. Proin non tortor arcu. Fusce at arcu tristique, aliquam risus vitae, vehicula est. </string>
+    <string name="terms_detail_decision">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida scelerisque lectus, sed lobortis orci posuere sed. Cras aliquam id ligula nec sollicitudin. Ut ut ligula purus. Phasellus lacinia, odio nec. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer gravida scelerisque lectus, sed lobortis orci posuere sed. Cras aliquam id ligula nec sollicitudin. Ut ut ligula purus. Phasellus lacinia, odio nec.\n\n
+								Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed mattis felis vitae efficitur egestas. Nam dapibus ultricies ipsum laoreet volutpat. Praesent nunc orci, pulvinar a porttitor sed, ornare ac sem. Ut malesuada velit libero, id aliquam sapien varius in. Ut ut odio a odio tincidunt blandit.</string>
 
     <!--Login-->
     <string name="actionbar_login">Login to AsthmaTrack</string>
@@ -40,6 +49,7 @@
     <string name="login_email_hint">email@emailaddress.com</string>
     <string name="login_password">Password</string>
     <string name="login_password_show">Show</string>
+    <string name="login_password_hide">Hide</string>
     <string name="login_forgotten_password">Forgotten Password?</string>
 
     <!--Forgotten Password-->
@@ -51,18 +61,27 @@
     <string name="forgot_email_sent_detail">We’ve sent you an email with a link to\n reset your password</string>
 
     <!--Set New Password-->
+    <string name="actionbar_set_new_psd">Set New Password</string>
     <string name="set_new_psd_detail">Enter your new password</string>
     <string name="set_new_psd">New Password</string>
     <string name="set_psd_must_have">Password must have:</string>
     <string name="set_psd_characters">8-20 characters (A-Z, a-z)</string>
     <string name="set_at_least_one">At least one\n special character</string>
     <string name="set_at_least_one_number">At least one number(0-9)</string>
+    <string name="set_psd_changed">Password changed!</string>
+    <string name="set_psd_changed_detail">Please return to the Login screen and \n enter your details</string>
+    <string name="set_return_login">Return to Login</string>
 
     <!--Activate Account-->
     <string name="activate_acnt_detail">We’ll only use these details so that you\n can login or reset your password</string>
     <string name="activate_login_failed">Login failed, Invalid email.</string>
+    <string name="actionbar_act_account">Activate Account</string>
+    <string name="activate_acnt_ok">Account Activated!</string>
+    <string name="activate_ok_detail">We now need to know a little bit more\n about you in order for you to get the most\n from this app</string>
+    <string name="activate_continue">Continue</string>
 
     <!--A Little About You-->
+    <string name="actionbar_little_about_you">A little about you</string>
     <string name="little_person_info">Personal Information</string>
     <string name="little_asthma_info">Asthma Information</string>
     <string name="little_detail1">We would like to know a little more about you</string>
@@ -71,8 +90,10 @@
     <string name="little_add_height_btn">Tap to add your height</string>
     <string name="little_weight">Weight</string>
     <string name="little_add_weight_btn">Tap to add your weight</string>
+    <string name="little_press_hold_change_btn">Press and hold to change</string>
     <string name="little_medication">Medication</string>
     <string name="little_add_medication">Add a medication</string>
+    <string name="little_height_kilo" formatted="false">%.1fkg</string>
     <string name="little_height_value" formatted="false">%dcm   |   %d\’%d\”   |   %d</string>
     <string name="little_weight_value" formatted="false">%.1fkg   |   %.1flbs   |   %dst %dlbs</string>
     <!--Link ActiGraph-->
@@ -82,6 +103,7 @@
     <string name="little_acgraph_only_can_link">You can only link one ActiGraph at a time</string>
     <string name="little_acgraph_dev_found">ActiGraph Devices Found</string>
     <string name="little_acgraph_link_actgraph">Link to this ActiGraph</string>
+
 
     <!--Add new medication-->
     <string name="actionbar_add_medi">Add new medication</string>
@@ -96,6 +118,8 @@
     <string name="add_medi_type_reliever">Reliever</string>
 
     <!--Add Weight or Height-->
+    <string name="actionbar_add_height">Add Height</string>
+    <string name="actionbar_add_weight">Add Weight</string>
     <string name="add_hw_drag_weight">Drag slider, release to set your weight</string>
     <string name="add_hw_drag_height">Drag slider, release to set your height</string>
 
@@ -156,7 +180,7 @@
     <string name="take_asq_have_digestive">Have digestive symptoms such as bloating, reflux or heartburn?</string>
     <string name="take_asq_feel_sad">Feel sad or depressed?</string>
     <string name="take_asq_experience_sleep">Experience difficulty sleeping?</string>
-    <string name="take_asq_increased_appetite">Experience increased appetite \nor weight gain?</string>
+    <string name="take_asq_increased_appetite">Experience increased appetite or weight gain?</string>
     <string name="take_asq_difficulty_remember">Experience difficulty remembering things?</string>
     <string name="take_asq_pay_attention">Experience difficulty paying close attention to something OR concentrating?</string>
     <string name="take_asq_swollen_face">Experience a swollen face OR “moon face” or swelling of other parts of your body?</string>
@@ -212,39 +236,39 @@
     <string name="dboard_act_due">Your next ACT is due in</string>
 
     <string name="dboard_attacks">Attacks</string>
-    <string name="dboard_attacks_no_data">No data avilable \nfor Attacks yet</string>
-    <string name="dboard_attacks_take">+ Take Attack Data</string>
+    <string name="dboard_attacks_no_data">No data avilable for \nAttacks yet</string>
+    <string name="dboard_attacks_take">+ Add Attack Data</string>
 
     <string name="dboard_activity">Activity</string>
-    <string name="dboard_activity_no_data">No data avilable \nfor Activity yet</string>
-    <string name="dboard_activity_take">+ Take Activity Data</string>
+    <string name="dboard_activity_no_data">No data avilable for \nActivity yet</string>
+    <string name="dboard_activity_take">+ Add Activity Data</string>
 
     <string name="dboard_spirometry">Spirometry</string>
-    <string name="dboard_spirometry_no_data">No data avilable \nfor Spirometry yet</string>
-    <string name="dboard_spirometry_take">+ Take Spirometry Data</string>
+    <string name="dboard_spirometry_no_data">No data avilable for \nSpirometry yet</string>
+    <string name="dboard_spirometry_take">+ Add Spirometry Data</string>
     <string name="dboard_spirometry_fev1">Last FEV1 reading(l/min)</string>
     <string name="dboard_spirometry_fvc">Last FVC reading(l/min)</string>
 
     <string name="dboard_peak_flow">Peak Flow</string>
-    <string name="dboard_peak_flow_no_data">No data avilable \nfor Peak Flow yet</string>
-    <string name="dboard_peak_flow_take">+ Take Peak Flow Data</string>
+    <string name="dboard_peak_flow_no_data">No data avilable for \nPeak Flow yet</string>
+    <string name="dboard_peak_flow_take">+ Add Peak Flow Data</string>
 
     <string name="dboard_mood">Mood</string>
-    <string name="dboard_mood_no_data">No data avilable \nfor Mood yet</string>
-    <string name="dboard_mood_take">+ Take Mood Data</string>
+    <string name="dboard_mood_no_data">No data avilable for \nMood yet</string>
+    <string name="dboard_mood_take">+ Add Mood</string>
 
     <string name="dboard_sleep">Sleep</string>
-    <string name="dboard_sleep_no_data">No data avilable \nfor Sleep yet</string>
-    <string name="dboard_sleep_take">+ Take Sleep Data</string>
+    <string name="dboard_sleep_no_data">No data avilable for \nSleep yet</string>
+    <string name="dboard_sleep_take">+ Add Sleep Data</string>
 
     <string name="dboard_weight">Weight</string>
-    <string name="dboard_weight_no_data">No data avilable \nfor Weight yet</string>
-    <string name="dboard_weight_take">+ Take Weight Data</string>
+    <string name="dboard_weight_no_data">No data avilable for \nWeight yet</string>
+    <string name="dboard_weight_take">+ Add Weight Data</string>
 
     <string name="dboard_medications">Medications</string>
-    <string name="dboard_medications_no_data">No medication data available</string>
     <string name="dboard_medications_current">You are currently on:</string>
-    <string name="dboard_medications_take">+ Add Medication Data</string>
+    <string name="dboard_medications_no_data">No medication data available</string>
+    <string name="dboard_medications_take">+ Update Medication Data</string>
 
     <!--Dashboard Weather, Pollen, Air Detail-->
     <string name="dbaord_data_provided_by">Data provided by</string>
@@ -268,6 +292,7 @@
     <string name="dboard_air_quality_hazardous_describ">Health alert: Everyone is likely to experience serious health effects.</string>
 
     <!--Your Alerts-->
+    <string name="actionbar_your_alerts">Your Alerts</string>
     <string name="alerts_no_msgs">Nothing to see here!</string>
     <string name="alerts_you_upto">you’re up to date!</string>
     <string name="alerts_your_asq_due_to">Your ASQ is due!</string>
@@ -295,6 +320,7 @@
     <string name="change_psd_old_password">Old password</string>
 
     <!--Settings Medication-->
+    <string name="actionbar_medications">Medications</string>
     <string name="settings_medic_add_another">Add another medication</string>
     <string name="settings_medic_new_dosage">New dosage</string>
     <string name="settings_medic_new_frequency">New frequency</string>
@@ -353,7 +379,7 @@
     <string name="review_month">MONTH</string>
     <string name="review_days_logged">Days\n logged</string>
     <string name="review_attacks">Attacks</string>
-    <string name="review_times_hospitalise">Times\n Hospitalised</string>
+    <string name="review_times_hospitalise">Times Hospitalised</string>
     <string name="review_logged_attack_data">Logged Attack Data</string>
 
     <!--Review Activities-->
@@ -367,6 +393,13 @@
     <string name="review_peak_flow">Review Peak Flow</string>
     <string name="review_highest_peak_flow">Highest Peak Flow</string>
     <string name="review_average_reading">Average Reading</string>
+    <string name="review_logged_peak_flow">Logged Peak Flow Data</string>
+
+    <!--Review Spirometry-->
+    <string name="review_spirometry">Review Spirometry</string>
+    <string name="review_avr_spirometry">Average Spirometry</string>
+    <string name="review_peak_spirometry">Peak spirometry</string>
+    <string name="review_logged_spirometry">Logged Spirometry Data</string>
 
     <!--Review Mood-->
     <string name="review_mood">Review Mood</string>
@@ -392,8 +425,9 @@
 
     <!--Your ASQ Test-->
     <string name="your_asq_due_in">Next ASQ due in</string>
-    <string name="your_asq_tests">Your ASQ Tests</string>
     <string name="zero_max_asq_detail">"0 = No or absent   10 = Worst imaginable"</string>
+    <string name="asq_graph_no_result">No Result</string>
+    <string name="your_asq_tests">Your ASQ Tests</string>
 
     <!--Review Medications-->
     <string name="review_medications">Review Medications</string>
@@ -411,4 +445,13 @@
     <string name="add_attacks_medic_changed">Have your \nmedications changed?</string>
     <string name="add_attacks_select_medic">Select medication to change</string>
     <string name="add_attacks_update_medication">Update Medication</string>
+    <string name="add_attacks_select_date">Select a date</string>
+    <string name="add_attacks_wich_date">On which date?</string>
+    <string name="add_attacks_when1">When did your</string>
+    <string name="add_attacks_when2">happen?</string>
+    <string name="add_attacks_when3">attack</string>
+    <string name="add_attacks_admin_steriod">Did you take or were you administered steroid tablets for your asthma attack?</string>
+    <string name="add_attacks_hospitalized">Were you\nhospitalised?</string>
+    <string name="add_attacks_affect_day">Did your attack affect\nyour day?</string>
+    <string name="add_attacks_details_added">Details Added</string>
 </resources>
