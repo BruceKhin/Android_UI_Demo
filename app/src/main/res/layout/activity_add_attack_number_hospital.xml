@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_action">
+        <ImageView
+            android:layout_width="@dimen/pad_17dp"
+            android:layout_height="@dimen/pad_16dp"
+            android:layout_marginTop="@dimen/pad_12dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_settings_update_medic" />
+        <TextView
+            style="@style/LabelTextView"
+            android:text="@string/add_attacks_number_hospitalize"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pad_7dp"
+            android:textSize="@dimen/txt_10_sp"
+            android:textStyle="normal"
+            android:textColor="@color/normal_back" />
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="3dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/pad_40dp"
+            android:layout_marginRight="@dimen/pad_40dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:alpha="0.7"
+            android:layout_marginBottom="@dimen/pad_13dp"
+            android:background="@drawable/add_hw_progress_small_gap_horizontal_dot_line" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/pad_50dp"
+            android:layout_margin="@dimen/pad_7dp"
+            android:background="@drawable/rounded_btn_white_dark_white_border">
+            <RelativeLayout
+                android:orientation="horizontal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true">
+                <TextView
+                    android:id="@+id/tvTimesNumber"
+                    style="@style/TimesTextView"
+                    android:textColor="@color/review_blue_text"
+                    android:layout_margin="0dp"
+                    android:padding="0dp"
+                    android:text="8" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_toRightOf="@+id/tvTimesNumber"
+                    android:textSize="@dimen/txt_10_sp"
+                    android:layout_marginTop="@dimen/pad_5dp"
+                    android:layout_marginLeft="@dimen/pad_5dp"
+                    android:textColor="@color/add_medic_times_day"
+                    android:textStyle="bold"
+                    android:text="days"/>
+            </RelativeLayout>
+        </RelativeLayout>
+    </LinearLayout>
+</RelativeLayout>

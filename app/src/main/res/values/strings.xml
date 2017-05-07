@@ -454,4 +454,9 @@
     <string name="add_attacks_hospitalized">Were you\nhospitalised?</string>
     <string name="add_attacks_affect_day">Did your attack affect\nyour day?</string>
     <string name="add_attacks_details_added">Details Added</string>
+    <string name="add_attacks_number_hospitalize">Number of days hospitalised?</string>
+    <string name="add_attacks_what_take_affect">What did your attack affect?</string>
+    <string name="add_attacks_education">Education</string>
+    <string name="add_attacks_work">Work</string>
+    <string name="add_attacks_over_how_many">Over how many days?</string>
 </resources>

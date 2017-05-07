@@ -117,16 +117,15 @@
                                 android:padding="0dp"
                                 android:text="00" />
                             <TextView
-                                android:id="@+id/textView"
-                                style="@style/LabelTextView"
-                                android:textSize="@dimen/txt_10_sp"
-                                android:layout_marginLeft="0dp"
-                                android:layout_marginTop="@dimen/pad_2dp"
-                                android:layout_alignParentTop="true"
-                                android:text="@string/add_medi_time_per_day"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
                                 android:layout_toRightOf="@+id/tvTimesNumber"
+                                android:textSize="@dimen/txt_10_sp"
+                                android:layout_marginTop="@dimen/pad_2dp"
+                                android:layout_marginLeft="@dimen/pad_2dp"
                                 android:textColor="@color/add_medic_times_day"
-                                android:layout_height="wrap_content" />
+                                android:textStyle="bold"
+                                android:text="@string/add_medi_time_per_day"/>
                         </RelativeLayout>
                     </RelativeLayout>
                 </LinearLayout>
