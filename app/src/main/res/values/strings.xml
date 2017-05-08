@@ -459,4 +459,16 @@
     <string name="add_attacks_education">Education</string>
     <string name="add_attacks_work">Work</string>
     <string name="add_attacks_over_how_many">Over how many days?</string>
+
+    <!--Add Activity-->
+    <string name="actionbar_add_activity">Add Activity</string>
+    <string name="add_act_would_like1">Would you like to add your</string>
+    <string name="add_act_would_like2">data for today or </string>
+    <string name="add_act_would_like3">another day?</string>
+    <string name="add_act_activity">activity</string>
+    <string name="add_act_wich_date">Which date?</string>
+    <string name="add_act_number_step">Number of steps</string>
+    <string name="add_act_steps">steps</string>
+    <string name="add_act_time_active">Time active</string>
+
 </resources>
