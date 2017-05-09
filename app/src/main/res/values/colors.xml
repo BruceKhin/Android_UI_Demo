@@ -94,4 +94,7 @@
     <!--Add Attacks-->
     <color name="add_attack_medic_updated_back_border">#979797</color>
     <color name="add_attack_medic_updated_back">#323232</color>
+
+    <!--Add Peak Flow-->
+    <color name="add_peak_flow_text_turtle">#7574ff</color>
 </resources>

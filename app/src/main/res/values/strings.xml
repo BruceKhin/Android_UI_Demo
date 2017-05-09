@@ -471,4 +471,13 @@
     <string name="add_act_steps">steps</string>
     <string name="add_act_time_active">Time active</string>
 
+    <!--Add Peak Flow-->
+    <string name="actionbar_add_peak_flow">Add Peak Flow</string>
+    <string name="add_peak_flow_would_like1">Would you like to add</string>
+    <string name="add_peak_flow_would_like2">data for today or</string>
+    <string name="add_peak_flow_would_like3">another day?</string>
+    <string name="add_peak_flow">peak flow</string>
+    <string name="add_peak_flow_what_reading">What is your peak flow reading?</string>
+    <string name="add_peak_flow_litres_min">litres/min</string>
+    <string name="add_peak_flow_tap_to_add">Tap to add</string>
 </resources>

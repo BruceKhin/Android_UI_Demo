@@ -112,4 +112,28 @@
                 android:text="m" />
         </RelativeLayout>
     </LinearLayout>
+    <TextView
+        android:id="@+id/tvLevelNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="3"
+        android:textStyle="normal"
+        android:textSize="@dimen/txt_9_sp"
+        android:padding="@dimen/pad_2dp"
+        android:textColor="@color/review_activity_detail_yellow"
+        android:layout_marginBottom="@dimen/pad_9dp" />
+    <TextView
+        android:id="@+id/tvTotalLevelNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/tvLevelNumber"
+        android:layout_alignTop="@+id/tvLevelNumber"
+        android:layout_marginTop="@dimen/pad_2dp"
+        android:text="/3"
+        android:textStyle="normal"
+        android:textSize="@dimen/txt_7_sp"
+        android:textColor="@color/little_tap_btn_grey_border"/>
 </RelativeLayout>
