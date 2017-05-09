@@ -480,4 +480,12 @@
     <string name="add_peak_flow_what_reading">What is your peak flow reading?</string>
     <string name="add_peak_flow_litres_min">litres/min</string>
     <string name="add_peak_flow_tap_to_add">Tap to add</string>
+
+    <!--Add Spirometry-->
+    <string name="actionbar_add_spirometry">Add Spirometry</string>
+    <string name="add_spirometry">spirometry</string>
+    <string name="add_spiro_fev">FEV</string>
+    <string name="add_spiro_fvc">FVC</string>
+    <string name="add_spiro_litres">litres</string>
+    <string name="add_spiro_fev_or_fvc">FEV1/FVC Ratio</string>
 </resources>
