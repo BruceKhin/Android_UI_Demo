@@ -511,5 +511,5 @@
 
     <!--Update Medications-->
     <string name="actionbar_update_medications">Update Medications</string>
-
+    <string name="update_medic_added">Medication added!</string>
 </resources>

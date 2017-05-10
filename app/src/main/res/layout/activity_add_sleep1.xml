@@ -116,23 +116,5 @@
         android:textStyle="normal"
         android:textSize="@dimen/txt_7_sp"
         android:textColor="@color/little_tap_btn_grey_border"/>
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:visibility="invisible"
-        android:background="@color/add_attack_medic_updated_back"
-        android:padding="@dimen/pad_10dp"
-        android:layout_alignParentBottom="true">
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_checked_green" />
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:textColor="@android:color/white"
-            android:layout_marginLeft="@dimen/pad_10dp"
-            android:text="@string/add_attacks_medic_updated" />
-    </LinearLayout>
+
 </RelativeLayout>
