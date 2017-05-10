@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <include
+        layout="@layout/action_bar" />
+    <LinearLayout
+        android:id="@+id/keyboardLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@+id/header_action">
+        <ImageView
+            android:layout_width="@dimen/pad_17dp"
+            android:layout_height="@dimen/pad_17dp"
+            android:layout_marginTop="@dimen/pad_7dp"
+            android:layout_gravity="center"
+            android:src="@drawable/ic_weight" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical">
+            <TextView
+                style="@style/LabelTextView"
+                android:text="@string/add_weight_your"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/pad_5dp"
+                android:textSize="@dimen/txt_10_sp"
+                android:textStyle="normal"
+                android:paddingLeft="@dimen/pad_4dp"
+                android:paddingRight="@dimen/pad_4dp"
+                android:textColor="@color/normal_back" />
+            <View
+                android:layout_width="@dimen/pad_40dp"
+                android:layout_height="3dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="@dimen/pad_10dp"
+                android:alpha="0.7"
+                android:layout_marginBottom="@dimen/pad_8dp"
+                android:background="@drawable/add_hw_progress_small_gap_horizontal_dot_line" />
+        </LinearLayout>
+        <TextView
+            style="@style/LabelTextView"
+            android:layout_gravity="center"
+            android:textColor="@color/disable_button_text"
+            android:textSize="@dimen/txt_8_sp"
+            android:textStyle="normal"
+            android:text="@string/add_weight_press_hold_add"/>
+        
+        <ImageView
+            android:layout_width="@dimen/pad_90dp"
+            android:layout_height="@dimen/pad_90dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:background="@drawable/add_weight_press_hold_btn"/>
+        <TextView
+            style="@style/LabelTextView"
+            android:text="--kg"
+            android:layout_marginTop="@dimen/pad_10dp"
+            android:textSize="@dimen/txt_10_sp"
+            android:textColor="@color/profile_password_text"
+            android:paddingTop="@dimen/pad_4dp"
+            android:paddingBottom="@dimen/pad_4dp"
+            android:paddingLeft="@dimen/pad_15dp"
+            android:paddingRight="@dimen/pad_15dp"
+            android:layout_gravity="center"
+            android:background="@drawable/rounded_grey_big_rad_border"/>
+    </LinearLayout>
+    <TextView
+        android:id="@+id/tvLevelNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="2"
+        android:textStyle="normal"
+        android:textSize="@dimen/txt_9_sp"
+        android:padding="@dimen/pad_2dp"
+        android:textColor="@color/add_weight_blue"
+        android:layout_marginBottom="@dimen/pad_9dp" />
+    <TextView
+        android:id="@+id/tvTotalLevelNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/tvLevelNumber"
+        android:layout_alignTop="@+id/tvLevelNumber"
+        android:layout_marginTop="@dimen/pad_2dp"
+        android:text="/2"
+        android:textStyle="normal"
+        android:textSize="@dimen/txt_7_sp"
+        android:textColor="@color/little_tap_btn_grey_border"/>
+</RelativeLayout>

@@ -501,4 +501,15 @@
     <string name="add_sleep">sleep</string>
     <string name="add_sleep_times_woken_symptom">Times woken by symptoms</string>
     <string name="add_sleep_times">times</string>
+
+    <!--Add Weight-->
+    <string name="add_weight_today_other">for today or another day?</string>
+    <string name="add_weight">weight</string>
+    <string name="add_weight_your">Add your weight</string>
+    <string name="add_weight_press_hold_add">Press and hold to add</string>
+    <string name="add_weight_press_hold_update">Press and hold to update</string>
+
+    <!--Update Medications-->
+    <string name="actionbar_update_medications">Update Medications</string>
+
 </resources>

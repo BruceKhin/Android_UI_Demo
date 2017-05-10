@@ -101,4 +101,7 @@
 
     <!--Add Sleep-->
     <color name="add_sleep_red">#ff758b</color>
+
+    <!--Add Weight-->
+    <color name="add_weight_blue">#587bff</color>
 </resources>

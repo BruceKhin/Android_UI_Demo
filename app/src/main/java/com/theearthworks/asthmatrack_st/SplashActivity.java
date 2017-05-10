@@ -13,7 +13,7 @@ public class SplashActivity extends Activity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_add_sleep3);
+        setContentView(R.layout.activity_add_weight1);
 
     }
 }
