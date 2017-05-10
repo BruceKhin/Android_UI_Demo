@@ -488,4 +488,9 @@
     <string name="add_spiro_fvc">FVC</string>
     <string name="add_spiro_litres">litres</string>
     <string name="add_spiro_fev_or_fvc">FEV1/FVC Ratio</string>
+
+    <!--Add Mood-->
+    <string name="actionbar_add_mood">Add Mood</string>
+    <string name="add_mood">mood</string>
+    <string name="add_mood_how_been">How has your mood been?</string>
 </resources>
