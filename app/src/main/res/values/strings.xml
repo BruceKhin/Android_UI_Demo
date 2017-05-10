@@ -492,5 +492,13 @@
     <!--Add Mood-->
     <string name="actionbar_add_mood">Add Mood</string>
     <string name="add_mood">mood</string>
+    <string name="add_mood_would_like1">Would you like to update your</string>
     <string name="add_mood_how_been">How has your mood been?</string>
+
+    <!--Add Sleep-->
+    <string name="actionbar_add_sleep">Add Sleep</string>
+    <string name="add_sleep_hrs_asleep">Hours Asleep</string>
+    <string name="add_sleep">sleep</string>
+    <string name="add_sleep_times_woken_symptom">Times woken by symptoms</string>
+    <string name="add_sleep_times">times</string>
 </resources>

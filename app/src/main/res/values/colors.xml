@@ -88,6 +88,7 @@
     <!--Revie Activity-->
     <color name="review_activity_detail_yellow">#ff8578</color>
 
+
     <!--ASQ Test-->
     <color name="asq_test_year_txt_back">#2e2b48</color>
 
@@ -97,4 +98,7 @@
 
     <!--Add Peak Flow-->
     <color name="add_peak_flow_text_turtle">#7574ff</color>
+
+    <!--Add Sleep-->
+    <color name="add_sleep_red">#ff758b</color>
 </resources>

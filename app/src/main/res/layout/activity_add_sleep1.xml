@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/activityRoot"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:minWidth="25px"
+    android:minHeight="25px">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="-5dp"
+        android:layout_below="@id/header_action">
+        <ImageView
+            android:layout_width="@dimen/pad_71dp"
+            android:layout_height="@dimen/pad_68dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="@dimen/pad_25dp"
+            android:background="@drawable/add_sleep_logo" />
+        <TextView
+            style="@style/LabelTextView"
+            android:textSize="@dimen/txt_10_sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:layout_marginTop="@dimen/pad_15dp"
+            android:textColor="@color/text_label_same_back"
+            android:text="@string/add_mood_would_like1" />
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginLeft="@dimen/pad_20dp"
+            android:layout_marginRight="@dimen/pad_20dp">
+            <TextView
+                style="@style/LabelTextView"
+                android:textSize="@dimen/txt_10_sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/text_label_same_back"
+                android:text="@string/add_sleep" />
+            <TextView
+                style="@style/LabelTextView"
+                android:textSize="@dimen/txt_10_sp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textStyle="normal"
+                android:layout_marginLeft="0dp"
+                android:textColor="@color/text_label_same_back"
+                android:text="@string/add_act_would_like2" />
+        </LinearLayout>
+        <TextView
+            style="@style/LabelTextView"
+            android:textSize="@dimen/txt_10_sp"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:textStyle="normal"
+            android:textColor="@color/text_label_same_back"
+            android:text="@string/add_act_would_like3" />
+        <TextView
+            style="@style/LabelTextView"
+            android:layout_marginLeft="@dimen/pad_7dp"
+            android:layout_marginTop="@dimen/pad_17dp"
+            android:textColor="@color/disable_button_text"
+            android:text="@string/add_act_wich_date" />
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/pad_7dp"
+            android:layout_marginRight="@dimen/pad_7dp"
+            android:layout_marginTop="@dimen/pad_5dp"
+            android:paddingTop="@dimen/pad_6dp"
+            android:paddingBottom="@dimen/pad_6dp"
+            android:background="@drawable/add_sleep_item_back">
+            <TextView
+                style="@style/LabelTextView"
+                android:layout_marginLeft="@dimen/pad_10dp"
+                android:textStyle="normal"
+                android:textColor="@color/normal_back"
+                android:text="@string/add_attacks_select_date" />
+            <ImageView
+                android:layout_width="@dimen/pad_9dp"
+                android:layout_height="@dimen/pad_9dp"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="@dimen/pad_7dp"
+                android:background="@drawable/ic_calendar_red" />
+        </RelativeLayout>
+    </LinearLayout>
+    <include
+        layout="@layout/action_bar" />
+    <TextView
+        android:id="@+id/tvLevelNumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:text="1"
+        android:textStyle="normal"
+        android:textSize="@dimen/txt_9_sp"
+        android:padding="@dimen/pad_2dp"
+        android:textColor="@color/add_sleep_red"
+        android:layout_marginBottom="@dimen/pad_9dp" />
+    <TextView
+        android:id="@+id/tvTotalLevelNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_toRightOf="@id/tvLevelNumber"
+        android:layout_alignTop="@+id/tvLevelNumber"
+        android:layout_marginTop="@dimen/pad_2dp"
+        android:text="/3"
+        android:textStyle="normal"
+        android:textSize="@dimen/txt_7_sp"
+        android:textColor="@color/little_tap_btn_grey_border"/>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:visibility="invisible"
+        android:background="@color/add_attack_medic_updated_back"
+        android:padding="@dimen/pad_10dp"
+        android:layout_alignParentBottom="true">
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/ic_checked_green" />
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@android:color/white"
+            android:layout_marginLeft="@dimen/pad_10dp"
+            android:text="@string/add_attacks_medic_updated" />
+    </LinearLayout>
+</RelativeLayout>
