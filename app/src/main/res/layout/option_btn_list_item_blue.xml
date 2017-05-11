@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginLeft="@dimen/pad_7dp"
+    android:layout_marginRight="@dimen/pad_7dp">
+    <RelativeLayout
+        android:id="@+id/rlOptionItem"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/pad_22dp"
+        android:layout_marginTop="@dimen/pad_5dp"
+        android:layout_marginBottom="@dimen/pad_5dp"
+        android:background="@drawable/add_attack_update_medic_item_back">
+        <TextView
+            android:id="@+id/tvItemText"
+            style="@style/LabelTextView"
+            android:text="ActiGraph 103A938CMW"
+            android:textStyle="normal"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="@dimen/pad_7dp"
+            android:textSize="@dimen/txt_8_sp"
+            android:textColor="@color/normal_back"/>
+        <ImageView
+            android:id="@+id/ivSelectedMark"
+            android:layout_width="@dimen/pad_7dp"
+            android:layout_height="@dimen/pad_7dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/ic_checked_blue"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="@dimen/pad_7dp"/>
+    </RelativeLayout>
+</RelativeLayout>
